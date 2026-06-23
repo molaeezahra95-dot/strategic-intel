@@ -1,0 +1,31 @@
+name: Update Financial Data
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install yfinance pandas
+
+      - name: Fetch data
+        run: python fetch_data.py
+
+      - name: Commit data.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data.json
+          git commit -m "Auto update: $(date '+%Y-%m-%d')" || echo "No changes"
+          git push
