@@ -1,4 +1,1122 @@
 {
-  "generated": "initial — run GitHub Action to update",
-  "companies": []
+  "generated": "2026-06-23 11:32 UTC",
+  "companies": [
+    {
+      "sym": "NVDA",
+      "name": "NVIDIA Corporation",
+      "wave": "ai",
+      "price": 208.65,
+      "ttm_pe": 31.95,
+      "industry": "Semiconductors",
+      "quarters": [
+        {
+          "label": "Q2 2026",
+          "revenue": 81.61,
+          "eps": 6.53,
+          "yoy": 85
+        },
+        {
+          "label": "Q1 2026",
+          "revenue": 68.13,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 57.01,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 46.74,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        44.1,
+        46.7,
+        57.0,
+        68.1,
+        81.6
+      ]
+    },
+    {
+      "sym": "TSM",
+      "name": "Taiwan Semiconductor",
+      "wave": "ai",
+      "price": 467.67,
+      "ttm_pe": 40.32,
+      "industry": "Foundry",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 1134.1,
+          "eps": 11.6,
+          "yoy": 35
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 1046.09,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 989.92,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 933.79,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        839.3,
+        933.8,
+        989.9,
+        1046.1,
+        1134.1
+      ]
+    },
+    {
+      "sym": "ASML",
+      "name": "ASML Holding NV",
+      "wave": "ai",
+      "price": 1929.25,
+      "ttm_pe": 64.94,
+      "industry": "Semiconductor Equip.",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 8.77,
+          "eps": 29.71,
+          "yoy": 13
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 9.72,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 7.52,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 7.69,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        7.7,
+        7.7,
+        7.5,
+        9.7,
+        8.8
+      ]
+    },
+    {
+      "sym": "ARM",
+      "name": "Arm Holdings PLC",
+      "wave": "ai",
+      "price": 407.72,
+      "ttm_pe": 474.09,
+      "industry": "Semiconductor IP",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 1.49,
+          "eps": 0.86,
+          "yoy": 20
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 1.24,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 1.14,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 1.05,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        1.2,
+        1.1,
+        1.1,
+        1.2,
+        1.5
+      ]
+    },
+    {
+      "sym": "MSFT",
+      "name": "Microsoft Corporation",
+      "wave": "ai",
+      "price": 367.34,
+      "ttm_pe": 21.88,
+      "industry": "Cloud/Software",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 82.89,
+          "eps": 16.79,
+          "yoy": 18
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 81.27,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 77.67,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 76.44,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        70.1,
+        76.4,
+        77.7,
+        81.3,
+        82.9
+      ]
+    },
+    {
+      "sym": "GOOGL",
+      "name": "Alphabet Inc.",
+      "wave": "ai",
+      "price": 349.68,
+      "ttm_pe": 26.67,
+      "industry": "Internet Services",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 109.9,
+          "eps": 13.11,
+          "yoy": 22
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 113.83,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 102.35,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 96.43,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        90.2,
+        96.4,
+        102.3,
+        113.8,
+        109.9
+      ]
+    },
+    {
+      "sym": "META",
+      "name": "Meta Platforms",
+      "wave": "ai",
+      "price": 563.85,
+      "ttm_pe": 20.49,
+      "industry": "Social Media",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 56.31,
+          "eps": 27.52,
+          "yoy": 33
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 59.89,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 51.24,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 47.52,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        42.3,
+        47.5,
+        51.2,
+        59.9,
+        56.3
+      ]
+    },
+    {
+      "sym": "AMZN",
+      "name": "Amazon.com Inc.",
+      "wave": "ai",
+      "price": 232.79,
+      "ttm_pe": 31.63,
+      "industry": "Cloud/E-commerce",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 181.52,
+          "eps": 7.36,
+          "yoy": 17
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 213.39,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 180.17,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 167.7,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        155.7,
+        167.7,
+        180.2,
+        213.4,
+        181.5
+      ]
+    },
+    {
+      "sym": "AVGO",
+      "name": "Broadcom Inc.",
+      "wave": "ai",
+      "price": 392.13,
+      "ttm_pe": 65.36,
+      "industry": "Semiconductors",
+      "quarters": [
+        {
+          "label": "Q2 2026",
+          "revenue": 22.19,
+          "eps": 6.0,
+          "yoy": 48
+        },
+        {
+          "label": "Q1 2026",
+          "revenue": 19.31,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 18.02,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 15.95,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        15.0,
+        16.0,
+        18.0,
+        19.3,
+        22.2
+      ]
+    },
+    {
+      "sym": "PLTR",
+      "name": "Palantir Technologies",
+      "wave": "ai",
+      "price": 119.5,
+      "ttm_pe": 134.27,
+      "industry": "Data Analytics",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 1.63,
+          "eps": 0.89,
+          "yoy": 85
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 1.41,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 1.18,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 1.0,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        0.9,
+        1.0,
+        1.2,
+        1.4,
+        1.6
+      ]
+    },
+    {
+      "sym": "2222.SR",
+      "name": "Saudi Aramco",
+      "wave": "energy",
+      "price": 26.44,
+      "ttm_pe": 17.17,
+      "industry": "Oil & Gas",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 467.24,
+          "eps": 1.54,
+          "yoy": 9
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 416.29,
+          "eps": null,
+          "yoy": -3
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 407.14,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q1 2025",
+          "revenue": 429.61,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        428.6,
+        429.6,
+        407.1,
+        416.3,
+        467.2
+      ]
+    },
+    {
+      "sym": "CEG",
+      "name": "Constellation Energy",
+      "wave": "energy",
+      "price": 275.53,
+      "ttm_pe": 23.92,
+      "industry": "Nuclear Power",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 11.12,
+          "eps": 11.52,
+          "yoy": 64
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 6.07,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 6.57,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 6.1,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        6.8,
+        6.1,
+        6.6,
+        6.1,
+        11.1
+      ]
+    },
+    {
+      "sym": "RIO",
+      "name": "Rio Tinto Group",
+      "wave": "energy",
+      "price": 99.36,
+      "ttm_pe": 16.34,
+      "industry": "Mining",
+      "quarters": [],
+      "spark": []
+    },
+    {
+      "sym": "DE",
+      "name": "Deere & Company",
+      "wave": "energy",
+      "price": 598.59,
+      "ttm_pe": 33.9,
+      "industry": "Machinery",
+      "quarters": [
+        {
+          "label": "Q2 2026",
+          "revenue": 13.09,
+          "eps": 17.66,
+          "yoy": 5
+        },
+        {
+          "label": "Q1 2026",
+          "revenue": 9.34,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 12.09,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 11.78,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        12.5,
+        11.8,
+        12.1,
+        9.3,
+        13.1
+      ]
+    },
+    {
+      "sym": "NVO",
+      "name": "Novo Nordisk A/S",
+      "wave": "bio",
+      "price": 45.88,
+      "ttm_pe": 10.92,
+      "industry": "Pharmaceuticals",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 96.82,
+          "eps": 4.2,
+          "yoy": 24
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 79.14,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 74.98,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 76.86,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        78.1,
+        76.9,
+        75.0,
+        79.1,
+        96.8
+      ]
+    },
+    {
+      "sym": "LLY",
+      "name": "Eli Lilly",
+      "wave": "bio",
+      "price": 1102.08,
+      "ttm_pe": 39.22,
+      "industry": "Pharmaceuticals",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 19.8,
+          "eps": 28.1,
+          "yoy": 56
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 19.29,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 17.6,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 15.56,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        12.7,
+        15.6,
+        17.6,
+        19.3,
+        19.8
+      ]
+    },
+    {
+      "sym": "CRSP",
+      "name": "CRISPR Therapeutics",
+      "wave": "bio",
+      "price": 54.36,
+      "ttm_pe": null,
+      "industry": "Biotech",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 0.0,
+          "eps": -6.17,
+          "yoy": null
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 0.0,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 0.0,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 0.0,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "sym": "V",
+      "name": "Visa Inc.",
+      "wave": "markets",
+      "price": 326.6,
+      "ttm_pe": 28.5,
+      "industry": "Payments",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 11.23,
+          "eps": 11.46,
+          "yoy": 17
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 10.9,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 10.72,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 10.17,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        9.6,
+        10.2,
+        10.7,
+        10.9,
+        11.2
+      ]
+    },
+    {
+      "sym": "BLK",
+      "name": "BlackRock Inc.",
+      "wave": "markets",
+      "price": 1051.74,
+      "ttm_pe": 26.45,
+      "industry": "Asset Management",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 6.7,
+          "eps": 39.76,
+          "yoy": 27
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 7.01,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 6.51,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 5.42,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        5.3,
+        5.4,
+        6.5,
+        7.0,
+        6.7
+      ]
+    },
+    {
+      "sym": "JPM",
+      "name": "JPMorgan Chase",
+      "wave": "markets",
+      "price": 331.48,
+      "ttm_pe": 15.88,
+      "industry": "Banking",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 49.83,
+          "eps": 20.88,
+          "yoy": 10
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 45.8,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 46.43,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 44.88,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        45.3,
+        44.9,
+        46.4,
+        45.8,
+        49.8
+      ]
+    },
+    {
+      "sym": "MELI",
+      "name": "MercadoLibre Inc.",
+      "wave": "markets",
+      "price": 1589.45,
+      "ttm_pe": 42.02,
+      "industry": "E-commerce/Fintech",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 8.85,
+          "eps": 37.83,
+          "yoy": 49
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 8.76,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 7.41,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 6.79,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        5.9,
+        6.8,
+        7.4,
+        8.8,
+        8.8
+      ]
+    },
+    {
+      "sym": "RELIANCE.NS",
+      "name": "Reliance Industries",
+      "wave": "markets",
+      "price": 1309.5,
+      "ttm_pe": 21.94,
+      "industry": "Conglomerate",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 2940.59,
+          "eps": 59.69,
+          "yoy": 12
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 2649.05,
+          "eps": null,
+          "yoy": 10
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 2436.32,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q1 2025",
+          "revenue": 2613.88,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        2399.9,
+        2613.9,
+        2436.3,
+        2649.1,
+        2940.6
+      ]
+    },
+    {
+      "sym": "LMT",
+      "name": "Lockheed Martin",
+      "wave": "defense",
+      "price": 493.6,
+      "ttm_pe": 23.93,
+      "industry": "Defense",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 18.02,
+          "eps": 20.63,
+          "yoy": 0
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 20.32,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 18.61,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 18.16,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        18.0,
+        18.2,
+        18.6,
+        20.3,
+        18.0
+      ]
+    },
+    {
+      "sym": "RHM.DE",
+      "name": "Rheinmetall AG",
+      "wave": "defense",
+      "price": 1188.8,
+      "ttm_pe": 52.32,
+      "industry": "Defense",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 1.94,
+          "eps": 22.72,
+          "yoy": 8
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 2.42,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 2.78,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 2.43,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        1.8,
+        2.4,
+        2.8,
+        2.4,
+        1.9
+      ]
+    },
+    {
+      "sym": "CRWD",
+      "name": "CrowdStrike Holdings",
+      "wave": "defense",
+      "price": 675.44,
+      "ttm_pe": null,
+      "industry": "Cybersecurity",
+      "quarters": [
+        {
+          "label": "Q2 2026",
+          "revenue": 1.39,
+          "eps": -0.14,
+          "yoy": 26
+        },
+        {
+          "label": "Q1 2026",
+          "revenue": 1.31,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 1.23,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 1.17,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        1.1,
+        1.2,
+        1.2,
+        1.3,
+        1.4
+      ]
+    },
+    {
+      "sym": "TSLA",
+      "name": "Tesla Inc.",
+      "wave": "defense",
+      "price": 405.05,
+      "ttm_pe": 371.61,
+      "industry": "EV/Energy",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 22.39,
+          "eps": 1.09,
+          "yoy": 16
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 24.9,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 28.09,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 22.5,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        19.3,
+        22.5,
+        28.1,
+        24.9,
+        22.4
+      ]
+    },
+    {
+      "sym": "BYDDY",
+      "name": "BYD Company",
+      "wave": "defense",
+      "price": 9.93,
+      "ttm_pe": 34.24,
+      "industry": "EV/Battery",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 150.23,
+          "eps": 0.29,
+          "yoy": -12
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 237.7,
+          "eps": null,
+          "yoy": -14
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 200.92,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q1 2025",
+          "revenue": 170.36,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        274.9,
+        170.4,
+        200.9,
+        237.7,
+        150.2
+      ]
+    },
+    {
+      "sym": "CAT",
+      "name": "Caterpillar Inc.",
+      "wave": "defense",
+      "price": 1022.28,
+      "ttm_pe": 51.01,
+      "industry": "Heavy Equipment",
+      "quarters": [
+        {
+          "label": "Q1 2026",
+          "revenue": 17.41,
+          "eps": 20.04,
+          "yoy": 22
+        },
+        {
+          "label": "Q4 2025",
+          "revenue": 19.13,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q3 2025",
+          "revenue": 17.64,
+          "eps": null,
+          "yoy": null
+        },
+        {
+          "label": "Q2 2025",
+          "revenue": 16.57,
+          "eps": null,
+          "yoy": null
+        }
+      ],
+      "spark": [
+        14.2,
+        16.6,
+        17.6,
+        19.1,
+        17.4
+      ]
+    }
+  ]
 }
