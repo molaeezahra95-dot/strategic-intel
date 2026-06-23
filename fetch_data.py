@@ -3,10 +3,9 @@
 import yfinance as yf
 import json
 import math
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 
-# ---- safe float conversion ----
 def sf(val, d=2):
     try:
         f = float(val)
@@ -15,7 +14,6 @@ def sf(val, d=2):
         return None
 
 
-# ---- company list by wave ----
 WAVES = {
     "ai": [
         ("NVDA",  "NVIDIA Corporation",     "Semiconductors"),
@@ -36,24 +34,24 @@ WAVES = {
         ("DE",      "Deere & Company",      "Machinery"),
     ],
     "bio": [
-        ("NVO",  "Novo Nordisk A/S",      "Pharmaceuticals"),
-        ("LLY",  "Eli Lilly",            "Pharmaceuticals"),
-        ("CRSP", "CRISPR Therapeutics",  "Biotech"),
+        ("NVO",  "Novo Nordisk A/S",     "Pharmaceuticals"),
+        ("LLY",  "Eli Lilly",           "Pharmaceuticals"),
+        ("CRSP", "CRISPR Therapeutics", "Biotech"),
     ],
     "markets": [
-        ("V",            "Visa Inc.",          "Payments"),
-        ("BLK",          "BlackRock Inc.",     "Asset Management"),
-        ("JPM",          "JPMorgan Chase",     "Banking"),
-        ("MELI",         "MercadoLibre Inc.", "E-commerce/Fintech"),
-        ("RELIANCE.NS",  "Reliance Industries","Conglomerate"),
+        ("V",           "Visa Inc.",          "Payments"),
+        ("BLK",         "BlackRock Inc.",     "Asset Management"),
+        ("JPM",         "JPMorgan Chase",     "Banking"),
+        ("MELI",        "MercadoLibre Inc.", "E-commerce/Fintech"),
+        ("RELIANCE.NS", "Reliance Industries","Conglomerate"),
     ],
     "defense": [
-        ("LMT",   "Lockheed Martin",       "Defense"),
-        ("RHM.DE","Rheinmetall AG",        "Defense"),
-        ("CRWD",  "CrowdStrike Holdings",  "Cybersecurity"),
-        ("TSLA",  "Tesla Inc.",            "EV/Energy"),
-        ("BYDDY", "BYD Company",           "EV/Battery"),
-        ("CAT",   "Caterpillar Inc.",      "Heavy Equipment"),
+        ("LMT",   "Lockheed Martin",      "Defense"),
+        ("RHM.DE","Rheinmetall AG",       "Defense"),
+        ("CRWD",  "CrowdStrike Holdings", "Cybersecurity"),
+        ("TSLA",  "Tesla Inc.",           "EV/Energy"),
+        ("BYDDY", "BYD Company",          "EV/Battery"),
+        ("CAT",   "Caterpillar Inc.",     "Heavy Equipment"),
     ],
 }
 
@@ -61,6 +59,36 @@ WAVES = {
 def quarter_label(ts):
     q = (ts.month - 1) // 3 + 1
     return f"Q{q} {ts.year}"
+
+
+def get_row(df, labels):
+    """Find first matching row label in a DataFrame."""
+    for lbl in labels:
+        if lbl in df.index:
+            return df.loc[lbl]
+    return None
+
+
+def build_annual_yoy(ticker):
+    """Return {year: yoy_pct} from annual income statement."""
+    result = {}
+    try:
+        ann = ticker.income_stmt
+        if ann is None or ann.empty:
+            return result
+        rev = get_row(ann, ["Total Revenue", "Revenue"])
+        if rev is None:
+            return result
+        cols = sorted(rev.index, reverse=True)
+        for i in range(len(cols) - 1):
+            c, p = cols[i], cols[i + 1]
+            cv = float(rev.get(c) or 0)
+            pv = float(rev.get(p) or 0)
+            if pv != 0 and not math.isnan(cv) and not math.isnan(pv):
+                result[c.year] = round((cv - pv) / abs(pv) * 100)
+    except Exception:
+        pass
+    return result
 
 
 def fetch_one(sym, name, wave, industry):
@@ -79,65 +107,77 @@ def fetch_one(sym, name, wave, industry):
         quarters, spark = [], []
 
         fin = t.quarterly_income_stmt
-        if fin is not None and not fin.empty:
-            rev_row = None
-            for lbl in ["Total Revenue", "Revenue"]:
-                if lbl in fin.index:
-                    rev_row = fin.loc[lbl]
-                    break
+        if fin is None or fin.empty:
+            print("no data")
+            return {"sym": sym, "name": name, "wave": wave,
+                    "price": price, "ttm_pe": pe, "industry": industry,
+                    "quarters": [], "spark": []}
 
-            if rev_row is not None:
-                cols = sorted(rev_row.index, reverse=True)
+        rev_row    = get_row(fin, ["Total Revenue", "Revenue"])
+        ni_row     = get_row(fin, ["Net Income", "Net Income Common Stockholders",
+                                    "Net Income Including Noncontrolling Interests"])
+        shares_row = get_row(fin, ["Diluted Average Shares", "Basic Average Shares",
+                                    "Ordinary Shares Number"])
 
-                # spark: last 8 quarters, oldest to newest, in $B
-                for c in reversed(cols[:8]):
-                    v = sf((rev_row.get(c) or 0) / 1e9, 1)
-                    if v is not None:
-                        spark.append(v)
+        # Annual YoY as fallback for quarters without prior-year quarter data
+        annual_yoy = build_annual_yoy(t)
 
-                # table: last 4 quarters
-                for col in cols[:4]:
-                    rev_b = sf((rev_row.get(col) or 0) / 1e9, 2)
-                    yoy = None
-                    target = col - timedelta(days=365)
-                    for other in cols:
-                        if abs((other - target).days) < 46:
-                            prev = rev_row.get(other)
-                            curr = rev_row.get(col)
-                            if prev and curr and float(prev) != 0:
-                                try:
-                                    yoy = round(
-                                        (float(curr) - float(prev)) / abs(float(prev)) * 100
-                                    )
-                                except:
-                                    pass
-                            break
-                    quarters.append({
-                        "label":   quarter_label(col),
-                        "revenue": rev_b,
-                        "eps":     None,
-                        "yoy":     yoy,
-                    })
+        if rev_row is not None:
+            cols = sorted(rev_row.index, reverse=True)
 
-        # EPS from quarterly_earnings
-        try:
-            earn = t.quarterly_earnings
-            if earn is not None and not earn.empty:
-                eps_col = next(
-                    (c for c in earn.columns if "Earnings" in c and "Share" in c), None
-                )
-                if eps_col:
-                    for q in quarters:
-                        for idx in earn.index:
-                            if q["label"] in str(idx) or str(idx) in q["label"]:
-                                q["eps"] = sf(earn.loc[idx, eps_col])
-                                break
-        except:
-            pass
+            # Spark: last 8 quarters oldest → newest
+            for c in reversed(cols[:8]):
+                v = sf((rev_row.get(c) or 0) / 1e9, 1)
+                if v is not None:
+                    spark.append(v)
 
-        # fallback EPS for latest quarter only
-        if quarters and quarters[0]["eps"] is None:
-            quarters[0]["eps"] = sf(info.get("trailingEps"))
+            # Table: last 4 quarters
+            for col in cols[:4]:
+                rev_b = sf((rev_row.get(col) or 0) / 1e9, 2)
+
+                # --- YoY: exact quarterly first ---
+                yoy = None
+                target = col - timedelta(days=365)
+                for other in cols:
+                    if abs((other - target).days) < 46:
+                        prev = rev_row.get(other)
+                        curr = rev_row.get(col)
+                        if prev and curr and float(prev) != 0:
+                            try:
+                                yoy = round(
+                                    (float(curr) - float(prev)) / abs(float(prev)) * 100
+                                )
+                            except Exception:
+                                pass
+                        break
+
+                # --- YoY fallback: annual rate for that calendar year ---
+                if yoy is None:
+                    yoy = annual_yoy.get(col.year)
+
+                # --- EPS: Net Income / Diluted Shares ---
+                eps = None
+                if ni_row is not None and shares_row is not None:
+                    ni = ni_row.get(col)
+                    sh = shares_row.get(col)
+                    if ni and sh:
+                        try:
+                            ni_f, sh_f = float(ni), float(sh)
+                            if sh_f != 0 and not math.isnan(ni_f) and not math.isnan(sh_f):
+                                eps = sf(ni_f / sh_f)
+                        except Exception:
+                            pass
+
+                # Fallback trailingEps only for most recent quarter
+                if eps is None and col == cols[0]:
+                    eps = sf(info.get("trailingEps"))
+
+                quarters.append({
+                    "label":   quarter_label(col),
+                    "revenue": rev_b,
+                    "eps":     eps,
+                    "yoy":     yoy,
+                })
 
         print("OK")
         return {
@@ -165,12 +205,10 @@ def main():
             if co:
                 companies.append(co)
 
-    now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
-    out = {"generated": now, "companies": companies}
-
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     with open("data.json", "w", encoding="utf-8") as f:
-        json.dump(out, f, ensure_ascii=False, indent=2)
-
+        json.dump({"generated": now, "companies": companies}, f,
+                  ensure_ascii=False, indent=2)
     print(f"\ndata.json saved — {len(companies)} companies — {now}")
 
 

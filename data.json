@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-23 11:32 UTC",
+  "generated": "2026-06-23 12:25 UTC",
   "companies": [
     {
       "sym": "NVDA",
@@ -12,26 +12,26 @@
         {
           "label": "Q2 2026",
           "revenue": 81.61,
-          "eps": 6.53,
+          "eps": 2.39,
           "yoy": 85
         },
         {
           "label": "Q1 2026",
           "revenue": 68.13,
-          "eps": null,
-          "yoy": null
+          "eps": 1.76,
+          "yoy": 65
         },
         {
           "label": "Q4 2025",
           "revenue": 57.01,
-          "eps": null,
-          "yoy": null
+          "eps": 1.3,
+          "yoy": 114
         },
         {
           "label": "Q3 2025",
           "revenue": 46.74,
-          "eps": null,
-          "yoy": null
+          "eps": 1.08,
+          "yoy": 114
         }
       ],
       "spark": [
@@ -53,26 +53,26 @@
         {
           "label": "Q1 2026",
           "revenue": 1134.1,
-          "eps": 11.6,
+          "eps": 110.38,
           "yoy": 35
         },
         {
           "label": "Q4 2025",
           "revenue": 1046.09,
-          "eps": null,
-          "yoy": null
+          "eps": 93.61,
+          "yoy": 32
         },
         {
           "label": "Q3 2025",
           "revenue": 989.92,
-          "eps": null,
-          "yoy": null
+          "eps": 87.22,
+          "yoy": 32
         },
         {
           "label": "Q2 2025",
           "revenue": 933.79,
-          "eps": null,
-          "yoy": null
+          "eps": 76.8,
+          "yoy": 32
         }
       ],
       "spark": [
@@ -94,26 +94,26 @@
         {
           "label": "Q1 2026",
           "revenue": 8.77,
-          "eps": 29.71,
+          "eps": 7.15,
           "yoy": 13
         },
         {
           "label": "Q4 2025",
           "revenue": 9.72,
-          "eps": null,
-          "yoy": null
+          "eps": 7.34,
+          "yoy": 16
         },
         {
           "label": "Q3 2025",
           "revenue": 7.52,
-          "eps": null,
-          "yoy": null
+          "eps": 5.48,
+          "yoy": 16
         },
         {
           "label": "Q2 2025",
           "revenue": 7.69,
           "eps": null,
-          "yoy": null
+          "yoy": 16
         }
       ],
       "spark": [
@@ -135,26 +135,26 @@
         {
           "label": "Q1 2026",
           "revenue": 1.49,
-          "eps": 0.86,
+          "eps": 0.29,
           "yoy": 20
         },
         {
           "label": "Q4 2025",
           "revenue": 1.24,
-          "eps": null,
-          "yoy": null
+          "eps": 0.21,
+          "yoy": 24
         },
         {
           "label": "Q3 2025",
           "revenue": 1.14,
-          "eps": null,
-          "yoy": null
+          "eps": 0.22,
+          "yoy": 24
         },
         {
           "label": "Q2 2025",
           "revenue": 1.05,
-          "eps": null,
-          "yoy": null
+          "eps": 0.12,
+          "yoy": 24
         }
       ],
       "spark": [
@@ -176,26 +176,26 @@
         {
           "label": "Q1 2026",
           "revenue": 82.89,
-          "eps": 16.79,
+          "eps": 4.27,
           "yoy": 18
         },
         {
           "label": "Q4 2025",
           "revenue": 81.27,
-          "eps": null,
-          "yoy": null
+          "eps": 5.16,
+          "yoy": 15
         },
         {
           "label": "Q3 2025",
           "revenue": 77.67,
-          "eps": null,
-          "yoy": null
+          "eps": 3.72,
+          "yoy": 15
         },
         {
           "label": "Q2 2025",
           "revenue": 76.44,
-          "eps": null,
-          "yoy": null
+          "eps": 3.65,
+          "yoy": 15
         }
       ],
       "spark": [
@@ -217,26 +217,26 @@
         {
           "label": "Q1 2026",
           "revenue": 109.9,
-          "eps": 13.11,
+          "eps": 5.11,
           "yoy": 22
         },
         {
           "label": "Q4 2025",
           "revenue": 113.83,
-          "eps": null,
-          "yoy": null
+          "eps": 2.82,
+          "yoy": 15
         },
         {
           "label": "Q3 2025",
           "revenue": 102.35,
-          "eps": null,
-          "yoy": null
+          "eps": 2.87,
+          "yoy": 15
         },
         {
           "label": "Q2 2025",
           "revenue": 96.43,
-          "eps": null,
-          "yoy": null
+          "eps": 2.31,
+          "yoy": 15
         }
       ],
       "spark": [
@@ -258,26 +258,26 @@
         {
           "label": "Q1 2026",
           "revenue": 56.31,
-          "eps": 27.52,
+          "eps": 10.44,
           "yoy": 33
         },
         {
           "label": "Q4 2025",
           "revenue": 59.89,
-          "eps": null,
-          "yoy": null
+          "eps": 8.88,
+          "yoy": 22
         },
         {
           "label": "Q3 2025",
           "revenue": 51.24,
-          "eps": null,
-          "yoy": null
+          "eps": 1.05,
+          "yoy": 22
         },
         {
           "label": "Q2 2025",
           "revenue": 47.52,
-          "eps": null,
-          "yoy": null
+          "eps": 7.14,
+          "yoy": 22
         }
       ],
       "spark": [
@@ -299,26 +299,26 @@
         {
           "label": "Q1 2026",
           "revenue": 181.52,
-          "eps": 7.36,
+          "eps": 2.78,
           "yoy": 17
         },
         {
           "label": "Q4 2025",
           "revenue": 213.39,
-          "eps": null,
-          "yoy": null
+          "eps": 1.95,
+          "yoy": 12
         },
         {
           "label": "Q3 2025",
           "revenue": 180.17,
-          "eps": null,
-          "yoy": null
+          "eps": 1.95,
+          "yoy": 12
         },
         {
           "label": "Q2 2025",
           "revenue": 167.7,
-          "eps": null,
-          "yoy": null
+          "eps": 1.68,
+          "yoy": 12
         }
       ],
       "spark": [
@@ -340,26 +340,26 @@
         {
           "label": "Q2 2026",
           "revenue": 22.19,
-          "eps": 6.0,
+          "eps": 1.91,
           "yoy": 48
         },
         {
           "label": "Q1 2026",
           "revenue": 19.31,
-          "eps": null,
+          "eps": 1.5,
           "yoy": null
         },
         {
           "label": "Q4 2025",
           "revenue": 18.02,
-          "eps": null,
-          "yoy": null
+          "eps": 1.74,
+          "yoy": 24
         },
         {
           "label": "Q3 2025",
           "revenue": 15.95,
-          "eps": null,
-          "yoy": null
+          "eps": 0.85,
+          "yoy": 24
         }
       ],
       "spark": [
@@ -381,26 +381,26 @@
         {
           "label": "Q1 2026",
           "revenue": 1.63,
-          "eps": 0.89,
+          "eps": 0.34,
           "yoy": 85
         },
         {
           "label": "Q4 2025",
           "revenue": 1.41,
-          "eps": null,
-          "yoy": null
+          "eps": 0.24,
+          "yoy": 56
         },
         {
           "label": "Q3 2025",
           "revenue": 1.18,
-          "eps": null,
-          "yoy": null
+          "eps": 0.19,
+          "yoy": 56
         },
         {
           "label": "Q2 2025",
           "revenue": 1.0,
-          "eps": null,
-          "yoy": null
+          "eps": 0.13,
+          "yoy": 56
         }
       ],
       "spark": [
@@ -415,14 +415,14 @@
       "sym": "2222.SR",
       "name": "Saudi Aramco",
       "wave": "energy",
-      "price": 26.44,
-      "ttm_pe": 17.17,
+      "price": 26.38,
+      "ttm_pe": 17.13,
       "industry": "Oil & Gas",
       "quarters": [
         {
           "label": "Q1 2026",
           "revenue": 467.24,
-          "eps": 1.54,
+          "eps": 0.5,
           "yoy": 9
         },
         {
@@ -434,14 +434,14 @@
         {
           "label": "Q2 2025",
           "revenue": 407.14,
-          "eps": null,
-          "yoy": null
+          "eps": 0.35,
+          "yoy": -7
         },
         {
           "label": "Q1 2025",
           "revenue": 429.61,
-          "eps": null,
-          "yoy": null
+          "eps": 0.4,
+          "yoy": -7
         }
       ],
       "spark": [
@@ -463,26 +463,26 @@
         {
           "label": "Q1 2026",
           "revenue": 11.12,
-          "eps": 11.52,
+          "eps": 4.49,
           "yoy": 64
         },
         {
           "label": "Q4 2025",
           "revenue": 6.07,
-          "eps": null,
-          "yoy": null
+          "eps": 1.38,
+          "yoy": 8
         },
         {
           "label": "Q3 2025",
           "revenue": 6.57,
-          "eps": null,
-          "yoy": null
+          "eps": 2.97,
+          "yoy": 8
         },
         {
           "label": "Q2 2025",
           "revenue": 6.1,
-          "eps": null,
-          "yoy": null
+          "eps": 2.67,
+          "yoy": 8
         }
       ],
       "spark": [
@@ -514,26 +514,26 @@
         {
           "label": "Q2 2026",
           "revenue": 13.09,
-          "eps": 17.66,
+          "eps": 6.55,
           "yoy": 5
         },
         {
           "label": "Q1 2026",
           "revenue": 9.34,
-          "eps": null,
+          "eps": 2.42,
           "yoy": null
         },
         {
           "label": "Q4 2025",
           "revenue": 12.09,
-          "eps": null,
-          "yoy": null
+          "eps": 3.93,
+          "yoy": -12
         },
         {
           "label": "Q3 2025",
           "revenue": 11.78,
-          "eps": null,
-          "yoy": null
+          "eps": 4.75,
+          "yoy": -12
         }
       ],
       "spark": [
@@ -555,26 +555,26 @@
         {
           "label": "Q1 2026",
           "revenue": 96.82,
-          "eps": 4.2,
+          "eps": 10.91,
           "yoy": 24
         },
         {
           "label": "Q4 2025",
           "revenue": 79.14,
-          "eps": null,
-          "yoy": null
+          "eps": 6.04,
+          "yoy": 6
         },
         {
           "label": "Q3 2025",
           "revenue": 74.98,
-          "eps": null,
-          "yoy": null
+          "eps": 4.5,
+          "yoy": 6
         },
         {
           "label": "Q2 2025",
           "revenue": 76.86,
-          "eps": null,
-          "yoy": null
+          "eps": 5.96,
+          "yoy": 6
         }
       ],
       "spark": [
@@ -596,26 +596,26 @@
         {
           "label": "Q1 2026",
           "revenue": 19.8,
-          "eps": 28.1,
+          "eps": 8.26,
           "yoy": 56
         },
         {
           "label": "Q4 2025",
           "revenue": 19.29,
-          "eps": null,
-          "yoy": null
+          "eps": 7.39,
+          "yoy": 45
         },
         {
           "label": "Q3 2025",
           "revenue": 17.6,
-          "eps": null,
-          "yoy": null
+          "eps": 6.21,
+          "yoy": 45
         },
         {
           "label": "Q2 2025",
           "revenue": 15.56,
-          "eps": null,
-          "yoy": null
+          "eps": 6.29,
+          "yoy": 45
         }
       ],
       "spark": [
@@ -637,26 +637,26 @@
         {
           "label": "Q1 2026",
           "revenue": 0.0,
-          "eps": -6.17,
+          "eps": -1.28,
           "yoy": null
         },
         {
           "label": "Q4 2025",
           "revenue": 0.0,
-          "eps": null,
-          "yoy": null
+          "eps": -1.37,
+          "yoy": -100
         },
         {
           "label": "Q3 2025",
           "revenue": 0.0,
-          "eps": null,
-          "yoy": null
+          "eps": -1.17,
+          "yoy": -100
         },
         {
           "label": "Q2 2025",
           "revenue": 0.0,
-          "eps": null,
-          "yoy": null
+          "eps": -2.4,
+          "yoy": -100
         }
       ],
       "spark": [
@@ -678,26 +678,26 @@
         {
           "label": "Q1 2026",
           "revenue": 11.23,
-          "eps": 11.46,
+          "eps": 2.81,
           "yoy": 17
         },
         {
           "label": "Q4 2025",
           "revenue": 10.9,
-          "eps": null,
-          "yoy": null
+          "eps": 2.71,
+          "yoy": 11
         },
         {
           "label": "Q3 2025",
           "revenue": 10.72,
-          "eps": null,
-          "yoy": null
+          "eps": 2.34,
+          "yoy": 11
         },
         {
           "label": "Q2 2025",
           "revenue": 10.17,
-          "eps": null,
-          "yoy": null
+          "eps": 2.41,
+          "yoy": 11
         }
       ],
       "spark": [
@@ -719,26 +719,26 @@
         {
           "label": "Q1 2026",
           "revenue": 6.7,
-          "eps": 39.76,
+          "eps": 13.41,
           "yoy": 27
         },
         {
           "label": "Q4 2025",
           "revenue": 7.01,
-          "eps": null,
-          "yoy": null
+          "eps": 6.81,
+          "yoy": 19
         },
         {
           "label": "Q3 2025",
           "revenue": 6.51,
-          "eps": null,
-          "yoy": null
+          "eps": 8.43,
+          "yoy": 19
         },
         {
           "label": "Q2 2025",
           "revenue": 5.42,
-          "eps": null,
-          "yoy": null
+          "eps": 10.19,
+          "yoy": 19
         }
       ],
       "spark": [
@@ -760,26 +760,26 @@
         {
           "label": "Q1 2026",
           "revenue": 49.83,
-          "eps": 20.88,
+          "eps": 6.06,
           "yoy": 10
         },
         {
           "label": "Q4 2025",
           "revenue": 45.8,
-          "eps": null,
-          "yoy": null
+          "eps": 4.75,
+          "yoy": 7
         },
         {
           "label": "Q3 2025",
           "revenue": 46.43,
-          "eps": null,
-          "yoy": null
+          "eps": 5.2,
+          "yoy": 7
         },
         {
           "label": "Q2 2025",
           "revenue": 44.88,
-          "eps": null,
-          "yoy": null
+          "eps": 5.36,
+          "yoy": 7
         }
       ],
       "spark": [
@@ -801,26 +801,26 @@
         {
           "label": "Q1 2026",
           "revenue": 8.85,
-          "eps": 37.83,
+          "eps": 8.23,
           "yoy": 49
         },
         {
           "label": "Q4 2025",
           "revenue": 8.76,
-          "eps": null,
-          "yoy": null
+          "eps": 11.03,
+          "yoy": 39
         },
         {
           "label": "Q3 2025",
           "revenue": 7.41,
-          "eps": null,
-          "yoy": null
+          "eps": 8.3,
+          "yoy": 39
         },
         {
           "label": "Q2 2025",
           "revenue": 6.79,
-          "eps": null,
-          "yoy": null
+          "eps": 10.32,
+          "yoy": 39
         }
       ],
       "spark": [
@@ -842,26 +842,26 @@
         {
           "label": "Q1 2026",
           "revenue": 2940.59,
-          "eps": 59.69,
+          "eps": 12.54,
           "yoy": 12
         },
         {
           "label": "Q4 2025",
           "revenue": 2649.05,
-          "eps": null,
+          "eps": 13.78,
           "yoy": 10
         },
         {
           "label": "Q2 2025",
           "revenue": 2436.32,
-          "eps": null,
-          "yoy": null
+          "eps": 19.95,
+          "yoy": 7
         },
         {
           "label": "Q1 2025",
           "revenue": 2613.88,
-          "eps": null,
-          "yoy": null
+          "eps": 14.34,
+          "yoy": 7
         }
       ],
       "spark": [
@@ -883,26 +883,26 @@
         {
           "label": "Q1 2026",
           "revenue": 18.02,
-          "eps": 20.63,
+          "eps": 6.44,
           "yoy": 0
         },
         {
           "label": "Q4 2025",
           "revenue": 20.32,
-          "eps": null,
-          "yoy": null
+          "eps": 5.8,
+          "yoy": 6
         },
         {
           "label": "Q3 2025",
           "revenue": 18.61,
-          "eps": null,
-          "yoy": null
+          "eps": 6.95,
+          "yoy": 6
         },
         {
           "label": "Q2 2025",
           "revenue": 18.16,
-          "eps": null,
-          "yoy": null
+          "eps": 1.46,
+          "yoy": 6
         }
       ],
       "spark": [
@@ -917,33 +917,33 @@
       "sym": "RHM.DE",
       "name": "Rheinmetall AG",
       "wave": "defense",
-      "price": 1188.8,
-      "ttm_pe": 52.32,
+      "price": 1189.8,
+      "ttm_pe": 52.37,
       "industry": "Defense",
       "quarters": [
         {
           "label": "Q1 2026",
           "revenue": 1.94,
-          "eps": 22.72,
+          "eps": 2.38,
           "yoy": 8
         },
         {
           "label": "Q4 2025",
           "revenue": 2.42,
           "eps": null,
-          "yoy": null
+          "yoy": 29
         },
         {
           "label": "Q3 2025",
           "revenue": 2.78,
-          "eps": null,
-          "yoy": null
+          "eps": 3.31,
+          "yoy": 29
         },
         {
           "label": "Q2 2025",
           "revenue": 2.43,
-          "eps": null,
-          "yoy": null
+          "eps": 2.83,
+          "yoy": 29
         }
       ],
       "spark": [
@@ -965,26 +965,26 @@
         {
           "label": "Q2 2026",
           "revenue": 1.39,
-          "eps": -0.14,
+          "eps": 0.11,
           "yoy": 26
         },
         {
           "label": "Q1 2026",
           "revenue": 1.31,
-          "eps": null,
-          "yoy": null
+          "eps": 0.23,
+          "yoy": 22
         },
         {
           "label": "Q4 2025",
           "revenue": 1.23,
-          "eps": null,
-          "yoy": null
+          "eps": -0.14,
+          "yoy": 29
         },
         {
           "label": "Q3 2025",
           "revenue": 1.17,
-          "eps": null,
-          "yoy": null
+          "eps": -0.31,
+          "yoy": 29
         }
       ],
       "spark": [
@@ -1006,26 +1006,26 @@
         {
           "label": "Q1 2026",
           "revenue": 22.39,
-          "eps": 1.09,
+          "eps": 0.13,
           "yoy": 16
         },
         {
           "label": "Q4 2025",
           "revenue": 24.9,
-          "eps": null,
-          "yoy": null
+          "eps": 0.24,
+          "yoy": -3
         },
         {
           "label": "Q3 2025",
           "revenue": 28.09,
-          "eps": null,
-          "yoy": null
+          "eps": 0.39,
+          "yoy": -3
         },
         {
           "label": "Q2 2025",
           "revenue": 22.5,
-          "eps": null,
-          "yoy": null
+          "eps": 0.33,
+          "yoy": -3
         }
       ],
       "spark": [
@@ -1047,7 +1047,7 @@
         {
           "label": "Q1 2026",
           "revenue": 150.23,
-          "eps": 0.29,
+          "eps": 0.45,
           "yoy": -12
         },
         {
@@ -1060,13 +1060,13 @@
           "label": "Q2 2025",
           "revenue": 200.92,
           "eps": null,
-          "yoy": null
+          "yoy": 3
         },
         {
           "label": "Q1 2025",
           "revenue": 170.36,
-          "eps": null,
-          "yoy": null
+          "eps": 2.08,
+          "yoy": 3
         }
       ],
       "spark": [
@@ -1088,26 +1088,26 @@
         {
           "label": "Q1 2026",
           "revenue": 17.41,
-          "eps": 20.04,
+          "eps": 5.47,
           "yoy": 22
         },
         {
           "label": "Q4 2025",
           "revenue": 19.13,
-          "eps": null,
-          "yoy": null
+          "eps": 5.12,
+          "yoy": 4
         },
         {
           "label": "Q3 2025",
           "revenue": 17.64,
-          "eps": null,
-          "yoy": null
+          "eps": 4.89,
+          "yoy": 4
         },
         {
           "label": "Q2 2025",
           "revenue": 16.57,
-          "eps": null,
-          "yoy": null
+          "eps": 4.62,
+          "yoy": 4
         }
       ],
       "spark": [
