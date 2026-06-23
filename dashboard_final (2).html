@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Strategic Intel — ۲۵ شرکت کلیدی جهان</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ══════════════════════════════════
+   SHARED BASE
+══════════════════════════════════ */
+* { margin:0; padding:0; box-sizing:border-box }
+html { scroll-behavior:smooth }
+
+/* ══════════════════════════════════
+   TAB 1 STYLES (waves_dashboard)
+══════════════════════════════════ */
+
+:root {
+  --ink:       #1A1812;
+  --ink-mid:   #3D3A30;
+  --ink-soft:  #6B6758;
+  --ink-faint: #A09D94;
+  --paper:     #F7F5F0;
+  --paper-2:   #EFECE5;
+  --paper-3:   #E5E1D6;
+  --white:     #FDFCFA;
+  --gold:      #B8860B;
+  --gold-b:    #D4A017;
+  --gold-l:    #F0C84A;
+  --gold-bg:   #FDF6E3;
+  --gold-line: rgba(184,134,11,.2);
+
+  /* wave accent colors — muted, professional */
+  --ai:       #4A6FA5;
+  --ai-bg:    #EEF2F8;
+  --energy:   #7A6930;
+  --energy-bg:#F5F0E0;
+  --bio:      #4A7A5A;
+  --bio-bg:   #EBF5EE;
+  --markets:  #8B4A6B;
+  --markets-bg:#F5EBF1;
+  --defense:  #7A4A2A;
+  --defense-bg:#F5EDE5;
+
+  --radius:   12px;
+  --shadow:   0 2px 12px rgba(26,24,18,.08);
+  --shadow-lg:0 8px 32px rgba(26,24,18,.12);
+}
+
+* { margin:0; padding:0; box-sizing:border-box }
+html { scroll-behavior:smooth }
+
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  direction: rtl;
+  min-height: 100vh;
+}
+
+/* ── HEADER ── */
+header {
+  background: var(--white);
+  border-bottom: 1px solid var(--paper-3);
+  padding: 0 40px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-mark {
+  width: 34px; height: 34px;
+  background: var(--ink);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--gold-l);
+  font-size: 13px; font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.logo-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.3px;
+}
+
+.logo-sub {
+  font-size: 10px;
+  color: var(--ink-faint);
+  margin-top: 1px;
+  font-weight: 400;
+}
+
+.header-meta {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.meta-stat {
+  text-align: center;
+}
+
+.meta-val {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.meta-lbl {
+  font-size: 9px;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-top: 2px;
+}
+
+.meta-divider {
+  width: 1px;
+  height: 28px;
+  background: var(--paper-3);
+}
+
+/* ── HERO ── */
+.hero {
+  background: var(--ink);
+  color: var(--white);
+  padding: 52px 40px 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -60px; left: -60px;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(212,160,23,.15), transparent 70%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -40px; right: 10%;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, rgba(212,160,23,.08), transparent 70%);
+  pointer-events: none;
+}
+
+.hero-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--gold-l);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+  margin-bottom: 12px;
+  max-width: 600px;
+}
+
+.hero-title em {
+  color: var(--gold-l);
+  font-style: normal;
+}
+
+.hero-desc {
+  font-size: 14px;
+  color: rgba(253,252,250,.6);
+  max-width: 500px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* ── WAVE NAV ── */
+.wave-nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--paper-3);
+  padding: 0 40px;
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+}
+
+.wave-tab {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 16px 18px 14px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  transition: all .15s;
+  text-decoration: none;
+}
+
+.wave-tab:hover {
+  color: var(--ink);
+}
+
+.wave-tab.active {
+  color: var(--ink);
+  border-bottom-color: var(--gold);
+}
+
+.wave-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ── MAIN ── */
+.wrap {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* ── WAVE SECTION ── */
+.wave-section {
+  margin-bottom: 56px;
+}
+
+.wave-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+
+.wave-icon {
+  font-size: 22px;
+}
+
+.wave-name {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.wave-tagline {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-bottom: 24px;
+  padding-right: 36px;
+  line-height: 1.6;
+}
+
+.wave-bar {
+  height: 3px;
+  border-radius: 2px;
+  margin-bottom: 24px;
+  width: 48px;
+}
+
+/* ── COMPANY GRID ── */
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 20px;
+}
+
+/* ── COMPANY CARD ── */
+.card {
+  background: var(--white);
+  border: 1px solid var(--paper-3);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: box-shadow .2s, transform .2s;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+/* card top band */
+.card-band {
+  height: 4px;
+}
+
+/* card header */
+.card-head {
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid var(--paper-2);
+}
+
+.card-top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.sym-block {}
+
+.sym {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.3px;
+  line-height: 1;
+}
+
+.sym-name {
+  font-size: 11px;
+  color: var(--ink-soft);
+  margin-top: 3px;
+  font-weight: 400;
+}
+
+.card-badges {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.badge {
+  font-size: 9px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 4px;
+  letter-spacing: 0.3px;
+}
+
+.badge-country {
+  background: var(--paper-2);
+  color: var(--ink-soft);
+}
+
+.badge-sector {
+  background: var(--gold-bg);
+  color: var(--gold);
+  border: 1px solid var(--gold-line);
+}
+
+/* tagline */
+.card-tagline {
+  font-size: 11px;
+  color: var(--ink-soft);
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+/* ── KPI ROW ── */
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid var(--paper-2);
+}
+
+.kpi {
+  padding: 11px 14px;
+  border-left: 1px solid var(--paper-2);
+}
+
+.kpi:last-child { border-left: none; }
+
+.kpi-lbl {
+  font-size: 8px;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 4px;
+}
+
+.kpi-val {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.kpi-val.gold { color: var(--gold); }
+.kpi-val.green { color: #3A7A4A; }
+.kpi-val.red { color: #B03A3A; }
+
+/* ── CARD BODY ── */
+.card-body {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* pie + info layout */
+.body-main {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+/* pie chart */
+.pie-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.pie-label {
+  font-size: 8px;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+
+.pie-canvas {
+  width: 90px;
+  height: 90px;
+}
+
+/* pie legend */
+.pie-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  color: var(--ink-mid);
+  line-height: 1.3;
+}
+
+.legend-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legend-name { flex: 1; }
+
+.legend-pct {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+  min-width: 26px;
+  text-align: left;
+}
+
+/* info blocks */
+.info-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-block {}
+
+.info-title {
+  font-size: 8px;
+  font-weight: 700;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 4px;
+}
+
+.info-text {
+  font-size: 11px;
+  color: var(--ink-mid);
+  line-height: 1.6;
+}
+
+/* key facts */
+.facts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fact {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 10px;
+  color: var(--ink-mid);
+  line-height: 1.5;
+}
+
+.fact-bullet {
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--gold);
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+/* moat tag */
+.moat-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding-top: 10px;
+  border-top: 1px solid var(--paper-2);
+}
+
+.moat-label {
+  font-size: 9px;
+  color: var(--ink-faint);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.moat-tag {
+  background: var(--gold-bg);
+  border: 1px solid var(--gold-line);
+  color: var(--gold);
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.3px;
+}
+
+/* ── DIVIDER ── */
+.section-divider {
+  height: 1px;
+  background: var(--paper-3);
+  margin: 48px 0 0;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--white);
+  border-top: 1px solid var(--paper-3);
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--ink-faint);
+  margin-top: 40px;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  header, .wrap, footer { padding-right: 20px; padding-left: 20px; }
+  .hero { padding: 36px 20px; }
+  .wave-nav { padding: 0 20px; }
+  .company-grid { grid-template-columns: 1fr; }
+  .hero-title { font-size: 26px; }
+  .body-main { grid-template-columns: 1fr; }
+}
+
+
+/* ══════════════════════════════════
+   MAIN TABS (shared)
+══════════════════════════════════ */
+.main-tabs {
+  background: var(--white);
+  border-bottom: 1px solid var(--paper-3);
+  padding: 0 40px;
+  display: flex;
+  gap: 2px;
+}
+.main-tab {
+  padding: 14px 22px 12px;
+  font-size: 13px; font-weight: 600;
+  color: var(--ink-soft);
+  cursor: pointer; border: none; background: transparent;
+  border-bottom: 2px solid transparent;
+  font-family: inherit; transition: all .15s;
+  display: flex; align-items: center; gap: 8px;
+  white-space: nowrap;
+}
+.main-tab:hover { color: var(--ink); }
+.main-tab.active { color: var(--ink); border-bottom-color: var(--gold); }
+.tab-panel { display: none }
+.tab-panel.active { display: block }
+
+/* ══════════════════════════════════
+   TAB 2 STYLES (financial)
+══════════════════════════════════ */
+/* override conflicting vars for tab2 */
+#tab2 {
+  --ai:     #1E44BB;
+  --energy: #BB5500;
+  --bio:    #1A7A45;
+  --markets:#882266;
+  --defense:#884422;
+}
+
+/* reuse tab-bar as filter-bar for tab2 */
+.filter-bar {
+  padding: 14px 40px;
+  display: flex; align-items: center; gap: 10px;
+  background: var(--white);
+  border-bottom: 1px solid var(--paper-3);
+  flex-wrap: wrap;
+}
+.filter-label {
+  font-size: 10px; color: var(--ink-soft);
+  text-transform: uppercase; letter-spacing: .7px;
+}
+.filter-pill {
+  padding: 5px 14px; border-radius: 20px;
+  font-size: 11px; font-weight: 600; cursor: pointer;
+  border: 1px solid var(--paper-3);
+  background: transparent; color: var(--ink-soft);
+  font-family: inherit; transition: all .15s;
+  display: flex; align-items: center; gap: 5px;
+}
+.filter-pill:hover { color: var(--ink); border-color: var(--paper-3); }
+.filter-pill.active { background: var(--ink); border-color: var(--ink); color: #fff; }
+.filter-dot { width:6px; height:6px; border-radius:50%; }
+
+.fin-wrap {
+  max-width: 1440px; margin: 0 auto; padding: 28px 40px;
+}
+.demo-note {
+  background: var(--gold-bg); border: 1px solid var(--gold-line);
+  border-radius: 8px; padding: 10px 16px; margin-bottom: 20px;
+  font-size: 11px; color: var(--ink-soft);
+  display: flex; align-items: center; gap: 8px;
+}
+.demo-note strong { color: var(--gold); }
+
+.fin-wave-section { margin-bottom: 48px; }
+.fin-wave-head {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 4px;
+}
+.fin-wave-stripe { width:3px; height:16px; border-radius:2px; flex-shrink:0; }
+.fin-wave-title { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.9px; }
+.fin-wave-count {
+  font-size:10px; color:var(--ink-soft);
+  background:var(--paper-2); border:1px solid var(--paper-3);
+  padding:1px 7px; border-radius:8px;
+}
+.fin-wave-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px,1fr));
+  gap: 14px; margin-top: 12px;
+}
+
+.fin-card {
+  background: var(--white); border: 1px solid var(--paper-3);
+  border-radius: var(--radius); overflow: hidden;
+  box-shadow: var(--shadow); transition: box-shadow .2s, transform .2s;
+}
+.fin-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+.fin-card-top { height: 3px; }
+.fin-card-head {
+  padding: 14px 16px 10px; background: var(--paper-2);
+  border-bottom: 1px solid var(--paper-3);
+  display: flex; align-items: flex-start; justify-content: space-between;
+}
+.fin-sym { font-size:17px; font-weight:800; color:var(--ink); letter-spacing:-.3px; line-height:1; }
+.fin-name { font-size:10px; color:var(--ink-soft); margin-top:2px; }
+.fin-subtitle { font-size:10px; color:var(--ink-faint); margin-top:4px; font-weight:300; }
+.fin-price-block { text-align:left; }
+.fin-price { font-size:16px; font-weight:700; color:var(--ink); font-variant-numeric:tabular-nums; line-height:1; }
+.fin-pe { font-size:9px; color:var(--ink-faint); margin-top:3px; }
+
+.spark-wrap {
+  padding: 8px 16px 6px; border-bottom: 1px solid var(--paper-3);
+  background: var(--paper);
+}
+.spark-label { font-size:8px; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.6px; margin-bottom:3px; }
+.spark-svg { width:100%; height:34px; }
+
+.q-table { width:100%; border-collapse:collapse; }
+.q-table th {
+  font-size:8px; font-weight:700; color:var(--ink-faint);
+  text-transform:uppercase; letter-spacing:.7px;
+  padding:7px 12px; background:var(--paper);
+  border-bottom:1px solid var(--paper-3); text-align:right;
+}
+.q-table td {
+  padding:9px 12px; font-size:11px;
+  border-bottom:1px solid var(--paper-2);
+  vertical-align:middle; font-variant-numeric:tabular-nums;
+}
+.q-table tr:last-child td { border-bottom:none; }
+.q-table tr:hover td { background:var(--paper); }
+
+.ql { font-weight:700; font-size:12px; }
+.ql-0 { color:#2A7A45; }
+.ql-1 { color:#2255BB; }
+.ql-2 { color:#6633AA; }
+.ql-3 { color:#AA5500; }
+.rev-val { font-weight:600; color:var(--ink); }
+.eps-val { color:var(--ink); }
+.eps-na  { color:var(--ink-faint); font-size:9px; }
+.yoy-badge {
+  display:inline-flex; align-items:center; gap:2px;
+  font-size:10px; font-weight:600; padding:2px 6px; border-radius:4px;
+}
+.yoy-up { color:#2A7A45; background:rgba(42,122,69,.08); }
+.yoy-dn { color:#B03A3A; background:rgba(176,58,58,.08); }
+.yoy-na { color:var(--ink-faint); }
+
+.fin-card-foot {
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:1px; background:var(--paper-3);
+  border-top:1px solid var(--paper-3);
+}
+.foot-cell { background:var(--white); padding:9px 12px; }
+.foot-lbl { font-size:8px; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.5px; margin-bottom:2px; }
+.foot-val { font-size:12px; font-weight:700; color:var(--ink); font-variant-numeric:tabular-nums; }
+.foot-val.ind { font-size:10px; color:var(--gold); }
+
+/* ══ RESPONSIVE ══ */
+@media(max-width:860px){
+  .main-tabs, .filter-bar, .fin-wrap { padding-right:16px; padding-left:16px; }
+  .fin-wave-grid { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- SHARED HEADER -->
+<header>
+  <div class="logo">
+    <div class="logo-mark">SI</div>
+    <div>
+      <div class="logo-title">Strategic Intel</div>
+      <div class="logo-sub">۲۵ شرکت کلیدی جهان · ۵ موج استراتژیک</div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <div class="meta-stat"><div class="meta-val">25</div><div class="meta-lbl">شرکت</div></div>
+    <div class="meta-divider"></div>
+    <div class="meta-stat"><div class="meta-val">5</div><div class="meta-lbl">موج</div></div>
+    <div class="meta-divider"></div>
+    <div class="meta-stat"><div class="meta-val">12</div><div class="meta-lbl">صنعت</div></div>
+    <div class="meta-divider"></div>
+    <div class="meta-stat"><div class="meta-val" id="clock">--:--</div><div class="meta-lbl">ساعت</div></div>
+  </div>
+</header>
+
+<!-- MAIN TABS -->
+<div class="main-tabs">
+  <button class="main-tab active" onclick="switchTab('tab1',this)">🌐 معرفی استراتژیک</button>
+  <button class="main-tab" onclick="switchTab('tab2',this)">📊 گزارش مالی فصلی</button>
+</div>
+
+<!-- ══════════════ TAB 1 ══════════════ -->
+<div class="tab-panel active" id="tab1">
+
+<div class="hero">
+  <div class="hero-label">داشبورد استراتژیک · ۲۰۲۶</div>
+  <div class="hero-title">۲۵ شرکت استراتژیک<br><em>۵ موج آینده</em></div>
+  <div class="hero-desc">گلوگاه‌های اقتصاد جهانی — از چیپ و AI تا انرژی، بیوتک، بازارهای نوظهور و دفاع</div>
+</div>
+
+<div class="wave-nav">
+  <a class="wave-tab active" href="#wave-ai"><span class="wave-dot" style="background:#4A6FA5"></span>موج AI و چیپ</a>
+  <a class="wave-tab" href="#wave-energy"><span class="wave-dot" style="background:#7A6930"></span>موج انرژی</a>
+  <a class="wave-tab" href="#wave-bio"><span class="wave-dot" style="background:#4A7A5A"></span>موج بیوتک</a>
+  <a class="wave-tab" href="#wave-markets"><span class="wave-dot" style="background:#8B4A6B"></span>موج بازارهای نوظهور</a>
+  <a class="wave-tab" href="#wave-defense"><span class="wave-dot" style="background:#7A4A2A"></span>موج دفاع و امنیت</a>
+</div>
+
+<div class="wrap">
+  <div class="wave-section" id="wave-ai">
+    <div class="wave-header"><div class="wave-icon">🤖</div><div class="wave-name" style="color:var(--ai)">موج هوش مصنوعی و چیپ</div></div>
+    <div class="wave-bar" style="background:var(--ai)"></div>
+    <div class="wave-tagline">زیرساخت سخت‌افزاری و نرم‌افزاری انقلاب AI — از چیپ تا پلتفرم</div>
+    <div class="company-grid" id="grid-ai"></div>
+  </div>
+  <div class="section-divider"></div>
+  <div class="wave-section" id="wave-energy" style="margin-top:48px">
+    <div class="wave-header"><div class="wave-icon">⚡</div><div class="wave-name" style="color:var(--energy)">موج انرژی و منابع</div></div>
+    <div class="wave-bar" style="background:var(--energy)"></div>
+    <div class="wave-tagline">از نفت تا هسته‌ای تا مواد خام — انرژی آینده و مواد اولیه انقلاب سبز</div>
+    <div class="company-grid" id="grid-energy"></div>
+  </div>
+  <div class="section-divider"></div>
+  <div class="wave-section" id="wave-bio" style="margin-top:48px">
+    <div class="wave-header"><div class="wave-icon">🧬</div><div class="wave-name" style="color:var(--bio)">موج بیوتک و سلامت</div></div>
+    <div class="wave-bar" style="background:var(--bio)"></div>
+    <div class="wave-tagline">انقلاب داروی چاقی، ویرایش ژن، و بازتعریف پزشکی مدرن</div>
+    <div class="company-grid" id="grid-bio"></div>
+  </div>
+  <div class="section-divider"></div>
+  <div class="wave-section" id="wave-markets" style="margin-top:48px">
+    <div class="wave-header"><div class="wave-icon">🌏</div><div class="wave-name" style="color:var(--markets)">موج بازارهای نوظهور و مالی</div></div>
+    <div class="wave-bar" style="background:var(--markets)"></div>
+    <div class="wave-tagline">هند، لاتین، و زیرساخت مالی جهانی — موتورهای رشد دهه آینده</div>
+    <div class="company-grid" id="grid-markets"></div>
+  </div>
+  <div class="section-divider"></div>
+  <div class="wave-section" id="wave-defense" style="margin-top:48px">
+    <div class="wave-header"><div class="wave-icon">🛡️</div><div class="wave-name" style="color:var(--defense)">موج دفاع، امنیت و خودرو</div></div>
+    <div class="wave-bar" style="background:var(--defense)"></div>
+    <div class="wave-tagline">تسلیح مجدد اروپا، امنیت سایبری، و تحول خودرو</div>
+    <div class="company-grid" id="grid-defense"></div>
+  </div>
+</div>
+
+<footer>
+  <div>Strategic Intel · داشبورد موج‌های استراتژیک · ۲۰۲۶</div>
+  <div>داده‌ها بر اساس آخرین گزارش‌های مالی شرکت‌ها</div>
+</footer>
+
+</div><!-- /tab1 -->
+
+<!-- ══════════════ TAB 2 ══════════════ -->
+<div class="tab-panel" id="tab2">
+
+<div class="filter-bar">
+  <span class="filter-label">موج:</span>
+  <button class="filter-pill active" data-wave="all" onclick="finFilterWave('all')">همه</button>
+  <button class="filter-pill" data-wave="ai" onclick="finFilterWave('ai')"><span class="filter-dot" style="background:#1E44BB"></span>AI و چیپ</button>
+  <button class="filter-pill" data-wave="energy" onclick="finFilterWave('energy')"><span class="filter-dot" style="background:#BB5500"></span>انرژی</button>
+  <button class="filter-pill" data-wave="bio" onclick="finFilterWave('bio')"><span class="filter-dot" style="background:#1A7A45"></span>بیوتک</button>
+  <button class="filter-pill" data-wave="markets" onclick="finFilterWave('markets')"><span class="filter-dot" style="background:#882266"></span>بازارها</button>
+  <button class="filter-pill" data-wave="defense" onclick="finFilterWave('defense')"><span class="filter-dot" style="background:#884422"></span>دفاع</button>
+</div>
+
+<div class="fin-wrap">
+  <div class="demo-note" id="demoBanner">⚡ داده نمونه · برای داده واقعی: <strong>python fetch_data.py</strong> → <strong>data.json</strong> کنار این فایل قرار بده</div>
+  <div id="fin-content"></div>
+</div>
+
+</div><!-- /tab2 -->
+
+<script>
+// ══ TAB SWITCH ══
+function switchTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.main-tab').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+
+<script>
+// ══════════════════════════════
+// TAB 1 JS
+// ══════════════════════════════
+// ── CLOCK ──
+function tick(){
+  document.getElementById('clock').textContent =
+    new Date().toLocaleTimeString('fa-IR',{hour:'2-digit',minute:'2-digit'});
+}
+tick(); setInterval(tick,1000);
+
+// ── WAVE TAB ACTIVE ──
+document.querySelectorAll('.wave-tab').forEach(tab=>{
+  tab.addEventListener('click',()=>{
+    document.querySelectorAll('.wave-tab').forEach(t=>t.classList.remove('active'));
+    tab.classList.add('active');
+  });
+});
+
+// ── PIE CHART DRAWING ──
+function drawPie(canvas, segments){
+  const ctx = canvas.getContext('2d');
+  const W = canvas.width, H = canvas.height;
+  const cx = W/2, cy = H/2, r = Math.min(W,H)/2 - 4;
+  ctx.clearRect(0,0,W,H);
+  let start = -Math.PI/2;
+  segments.forEach(s=>{
+    const angle = (s.pct/100) * Math.PI * 2;
+    ctx.beginPath();
+    ctx.moveTo(cx,cy);
+    ctx.arc(cx,cy,r,start,start+angle);
+    ctx.closePath();
+    ctx.fillStyle = s.color;
+    ctx.fill();
+    start += angle;
+  });
+  // center hole
+  ctx.beginPath();
+  ctx.arc(cx,cy,r*0.48,0,Math.PI*2);
+  ctx.fillStyle = '#FDFCFA';
+  ctx.fill();
+}
+
+// ── DATA ──
+const COMPANIES = [
+
+  // ══ WAVE: AI ══
+  {wave:'ai', sym:'NVDA', name:'NVIDIA Corporation', country:'🇺🇸', sector:'Semiconductors',
+   mktcap:'$5.2T', revenue:'$113B', growth:'+122%', pe:'52.8', founded:1993,
+   tagline:'طراح چیپ‌های GPU که قلب انقلاب AI هستند',
+   moat:'انحصار عملی چیپ AI — سهم بازار ۸۰٪+',
+   revenue_breakdown:[
+     {name:'Data Center (AI)',pct:87,color:'#4A6FA5'},
+     {name:'Gaming',pct:9,color:'#7A9BC5'},
+     {name:'Professional',pct:2,color:'#AAC0E0'},
+     {name:'Automotive',pct:2,color:'#D0E0F5'},
+   ],
+   market_position:'بیش از ۸۰٪ بازار چیپ‌های AI datacenter. رقبا (AMD, Intel) هنوز ۲-۳ نسل عقب‌ترند.',
+   key_facts:[
+     'هر مدل زبانی بزرگ روی GPU‌های NVIDIA آموزش دیده',
+     'درآمد data center از $3B به $98B در ۳ سال رسید',
+     'Jensen Huang بنیانگذار و CEO از ابتدا تا کنون',
+   ]},
+
+  {wave:'ai', sym:'TSM', name:'Taiwan Semiconductor', country:'🇹🇼', sector:'Foundry',
+   mktcap:'$947B', revenue:'$90B', growth:'+34%', pe:'28.1', founded:1987,
+   tagline:'تنها کارخانه‌ای که پیشرفته‌ترین چیپ‌های دنیا را می‌سازد',
+   moat:'تنها سازنده چیپ ۳nm/2nm — NVIDIA، Apple، AMD همه مشتری‌اند',
+   revenue_breakdown:[
+     {name:'HPC / AI',pct:52,color:'#4A6FA5'},
+     {name:'Smartphone',pct:33,color:'#7A9BC5'},
+     {name:'IoT',pct:8,color:'#AAC0E0'},
+     {name:'Automotive',pct:5,color:'#D0E0F5'},
+     {name:'سایر',pct:2,color:'#E8F0F8'},
+   ],
+   market_position:'۹۰٪ پیشرفته‌ترین چیپ‌های دنیا. Samsung و Intel تلاش کردند رقابت کنند — هنوز عقب‌ترند.',
+   key_facts:[
+     'بدون TSMC: Apple، NVIDIA، AMD متوقف می‌شوند',
+     'هر ماشین EUV که می‌خرد $200M هزینه دارد',
+     'ژئوپلیتیک‌ترین شرکت دنیا — تایوان، چین، آمریکا',
+   ]},
+
+  {wave:'ai', sym:'ASML', name:'ASML Holding NV', country:'🇳🇱', sector:'Semiconductor Equipment',
+   mktcap:'$318B', revenue:'$29B', growth:'+13%', pe:'38.4', founded:1984,
+   tagline:'تنها سازنده ماشین‌هایی که بدون آنها ساخت چیپ ممکن نیست',
+   moat:'انحصار مطلق EUV — صفر رقیب در جهان',
+   revenue_breakdown:[
+     {name:'EUV Systems',pct:55,color:'#4A6FA5'},
+     {name:'DUV Systems',pct:30,color:'#7A9BC5'},
+     {name:'خدمات',pct:15,color:'#AAC0E0'},
+   ],
+   market_position:'تنها شرکت دنیا که ماشین EUV می‌سازد. هر ماشین $200M، وزن ۱۸۰ تن. رقیب ندارد.',
+   key_facts:[
+     'آمریکا جلوی فروش به چین را گرفته — ASML در مرکز جنگ تکنولوژی',
+     'بدون EUV: هیچ چیپ پیشرفته‌ای در جهان ساخته نمی‌شود',
+     'ژانویه ۲۰۲۶: کاهش ۱۷۰۰ شغل اعلام شد',
+   ]},
+
+  {wave:'ai', sym:'ARM', name:'Arm Holdings PLC', country:'🇬🇧', sector:'Semiconductor IP',
+   mktcap:'$148B', revenue:'$3.9B', growth:'+21%', pe:'85.2', founded:1990,
+   tagline:'معماری پردازنده‌ای که ۹۹٪ گوشی‌های جهان روی آن کار می‌کنند',
+   moat:'network effect — تمام نرم‌افزارهای موبایل برای ARM نوشته شده‌اند',
+   revenue_breakdown:[
+     {name:'Royalties',pct:59,color:'#4A6FA5'},
+     {name:'License Fees',pct:41,color:'#7A9BC5'},
+   ],
+   market_position:'۹۹٪ گوشی‌های هوشمند، اکثر چیپ‌های AI edge. طراحی نمی‌کند — لایسنس می‌فروشد.',
+   key_facts:[
+     'NVIDIA تلاش کرد بخرد — رگولاتورها مسدود کردند',
+     'از هر چیپ ساخته شده با معماری‌اش royalty می‌گیرد',
+     'Apple Silicon، Qualcomm، Samsung همه مشتری‌اند',
+   ]},
+
+  {wave:'ai', sym:'MSFT', name:'Microsoft Corporation', country:'🇺🇸', sector:'Cloud / Software',
+   mktcap:'$3.1T', revenue:'$245B', growth:'+16%', pe:'36.1', founded:1975,
+   tagline:'بزرگ‌ترین بازیگر enterprise AI از طریق Azure و سرمایه‌گذاری در OpenAI',
+   moat:'Azure + Office 365 + GitHub + OpenAI — اکوسیستم بی‌رقیب enterprise',
+   revenue_breakdown:[
+     {name:'Intelligent Cloud (Azure)',pct:43,color:'#4A6FA5'},
+     {name:'Productivity (Office)',pct:32,color:'#7A9BC5'},
+     {name:'Personal Computing',pct:25,color:'#AAC0E0'},
+   ],
+   market_position:'دومین cloud جهان (Azure 25%). سرمایه‌گذاری $13B در OpenAI. Copilot AI در تمام محصولات.',
+   key_facts:[
+     'ChatGPT روی Azure اجرا می‌شود',
+     'GitHub — بزرگ‌ترین پلتفرم کد دنیا — در اختیار Microsoft',
+     'سود عملیاتی Azure بالاتر از کل درآمد بیشتر Fortune 500',
+   ]},
+
+  {wave:'ai', sym:'GOOGL', name:'Alphabet Inc.', country:'🇺🇸', sector:'Technology',
+   mktcap:'$4.6T', revenue:'$340B', growth:'+14%', pe:'23.4', founded:1998,
+   tagline:'جستجوی جهانی، YouTube، Cloud، و Waymo — همه زیر یک سقف',
+   moat:'۷۷٪ بازار جستجوی جهانی + اکوسیستم Android',
+   revenue_breakdown:[
+     {name:'Google Search',pct:57,color:'#4A6FA5'},
+     {name:'Google Cloud',pct:11,color:'#7A9BC5'},
+     {name:'YouTube',pct:10,color:'#AAC0E0'},
+     {name:'Google Network',pct:9,color:'#C5D8F0'},
+     {name:'سایر',pct:13,color:'#E0EBF8'},
+   ],
+   market_position:'۷۷٪ بازار جستجوی جهانی. Gemini رقیب GPT-4. DeepMind پیشرفته‌ترین تیم تحقیقاتی AI.',
+   key_facts:[
+     'بزرگ‌ترین ریسک: AI بدون نیاز به جستجو — تهدید مدل درآمدی',
+     'Waymo — پیشرفته‌ترین تاکسی خودران عملیاتی دنیا',
+     'Gemini Ultra در بسیاری معیارها با GPT-4 رقابت می‌کند',
+   ]},
+
+  {wave:'ai', sym:'META', name:'Meta Platforms', country:'🇺🇸', sector:'Social Media',
+   mktcap:'$1.6T', revenue:'$165B', growth:'+22%', pe:'27.9', founded:2004,
+   tagline:'Facebook، Instagram، WhatsApp — ۳.۲ میلیارد کاربر روزانه',
+   moat:'بزرگ‌ترین شبکه اجتماعی — جابجا کردن کاربر تقریباً غیرممکن است',
+   revenue_breakdown:[
+     {name:'Advertising (Apps)',pct:97,color:'#4A6FA5'},
+     {name:'Reality Labs (VR)',pct:3,color:'#AAC0E0'},
+   ],
+   market_position:'۳.۲ میلیارد کاربر روزانه. Llama (AI اپن‌سورس) رایگان منتشر شده — برای تضعیف OpenAI.',
+   key_facts:[
+     'Reality Labs هنوز سالانه $5B+ ضرر می‌دهد',
+     'Llama 3 قوی‌ترین مدل اپن‌سورس جهان است',
+     'تبلیغات دیجیتال بعد از بحران ۲۰۲۲، رکورد شکست',
+   ]},
+
+  {wave:'ai', sym:'AMZN', name:'Amazon.com Inc.', country:'🇺🇸', sector:'Cloud / E-commerce',
+   mktcap:'$2.9T', revenue:'$620B', growth:'+11%', pe:'44.7', founded:1994,
+   tagline:'بزرگ‌ترین cloud جهان (AWS) به علاوه امپراطوری تجارت الکترونیک',
+   moat:'AWS با ۳۱٪ سهم — بزرگ‌ترین و قدیمی‌ترین cloud provider',
+   revenue_breakdown:[
+     {name:'Online Stores',pct:38,color:'#4A6FA5'},
+     {name:'AWS (Cloud)',pct:17,color:'#7A9BC5'},
+     {name:'Third-party Sellers',pct:24,color:'#AAC0E0'},
+     {name:'Advertising',pct:9,color:'#C5D8F0'},
+     {name:'سایر',pct:12,color:'#E0EBF8'},
+   ],
+   market_position:'AWS با ۳۱٪ سهم، بزرگ‌ترین cloud provider. Prime بیش از ۲۰۰ میلیون عضو.',
+   key_facts:[
+     'AWS ۱۷٪ درآمد ولی بیش از ۶۰٪ سود عملیاتی Amazon است',
+     'Alexa + Bedrock — استراتژی AI مستقل از OpenAI',
+     'بزرگ‌ترین کارفرمای خصوصی آمریکا با ۱.۵ میلیون کارمند',
+   ]},
+
+  {wave:'ai', sym:'AVGO', name:'Broadcom Inc.', country:'🇺🇸', sector:'Semiconductors',
+   mktcap:'$795B', revenue:'$51B', growth:'+44%', pe:'38.2', founded:1961,
+   tagline:'چیپ شبکه و ذخیره‌سازی — زیرساخت پنهان اینترنت',
+   moat:'دوپولی چیپ networking با Marvell + VMware در enterprise',
+   revenue_breakdown:[
+     {name:'Semiconductor Solutions',pct:57,color:'#4A6FA5'},
+     {name:'Infrastructure Software (VMware)',pct:43,color:'#7A9BC5'},
+   ],
+   market_position:'Custom AI chips برای Google و Meta. VMware (خریداری ۲۰۲۳) در enterprise تقریباً انحصار دارد.',
+   key_facts:[
+     'خرید VMware به $69B — بزرگ‌ترین M&A تاریخ semiconductor',
+     'Google و Meta چیپ AI اختصاصی از Broadcom می‌سازند',
+     'در سایه NVIDIA — ولی در AI networking تقریباً انحصار دارد',
+   ]},
+
+  // ══ WAVE: ENERGY ══
+  {wave:'energy', sym:'2222', name:'Saudi Aramco', country:'🇸🇦', sector:'Oil & Gas',
+   mktcap:'$1.9T', revenue:'$440B', growth:'-4%', pe:'14.2', founded:1933,
+   tagline:'بزرگ‌ترین تولیدکننده نفت جهان — روزانه ۱۲ میلیون بشکه',
+   moat:'پایین‌ترین هزینه استخراج دنیا (~$3/بشکه) + بزرگ‌ترین ذخایر',
+   revenue_breakdown:[
+     {name:'Upstream (نفت/گاز)',pct:75,color:'#7A6930'},
+     {name:'Downstream (پالایش)',pct:20,color:'#A09050'},
+     {name:'سایر',pct:5,color:'#C8B87A'},
+   ],
+   market_position:'۱۲٪ تولید نفت جهان. ذخایر ۲۶۰ میلیارد بشکه. حتی با نفت $40 هم سودآور است.',
+   key_facts:[
+     '۲۰۱۹: بزرگ‌ترین IPO تاریخ — $25.6B',
+     '۲۰۲۲: سود $161B — رکورد تاریخ شرکت‌های عمومی',
+     'کمک‌هزینه $98B سالانه به دولت عربستان',
+   ]},
+
+  {wave:'energy', sym:'CEG', name:'Constellation Energy', country:'🇺🇸', sector:'Nuclear Power',
+   mktcap:'$67B', revenue:'$24B', growth:'+8%', pe:'31.4', founded:1999,
+   tagline:'بزرگ‌ترین اپراتور نیروگاه هسته‌ای آمریکا — برق پاک ۲۴/۷',
+   moat:'برق هسته‌ای ۲۴/۷ بدون کربن — تنها پاسخ به نیاز AI',
+   revenue_breakdown:[
+     {name:'Nuclear Generation',pct:85,color:'#7A6930'},
+     {name:'Natural Gas & Other',pct:15,color:'#A09050'},
+   ],
+   market_position:'بزرگ‌ترین برنده غیرمستقیم AI. قرارداد ۲۰ ساله با Microsoft برای Three Mile Island.',
+   key_facts:[
+     'AI به برق پاک ۲۴/۷ نیاز دارد — هسته‌ای تنها گزینه است',
+     'قیمت سهام از ۲۰۲۲ بیش از ۳ برابر شده',
+     'Three Mile Island — نیروگاهی که بسته شده بود، دوباره باز شد',
+   ]},
+
+  {wave:'energy', sym:'RIO', name:'Rio Tinto Group', country:'🇦🇺', sector:'Mining',
+   mktcap:'$100B', revenue:'$54B', growth:'-3%', pe:'10.8', founded:1873,
+   tagline:'دومین معدنکار بزرگ جهان — مس، آهن، لیتیوم برای انقلاب سبز',
+   moat:'ذخایر مس و لیتیوم دهه‌ها ارزش دارند — رقیب جدید ساختن معدن دهه‌ها طول می‌کشد',
+   revenue_breakdown:[
+     {name:'Iron Ore',pct:57,color:'#7A6930'},
+     {name:'Aluminium',pct:17,color:'#A09050'},
+     {name:'Copper',pct:16,color:'#C8B87A'},
+     {name:'سایر',pct:10,color:'#E0D5A0'},
+   ],
+   market_position:'تقاضای مس تا ۲۰۵۰ دو برابر می‌شود. Rio Tinto یکی از بزرگ‌ترین ذخایر مس دنیا را دارد.',
+   key_facts:[
+     'بدون مس Rio Tinto: نه خودرو برقی، نه زیرساخت برق',
+     'سرمایه‌گذاری کلان در معادن لیتیوم برای باتری EV',
+     '۱۵۰ سال سابقه — یکی از قدیمی‌ترین شرکت‌های معدنی',
+   ]},
+
+  // ══ WAVE: BIO ══
+  {wave:'bio', sym:'NVO', name:'Novo Nordisk A/S', country:'🇩🇰', sector:'Pharmaceuticals',
+   mktcap:'$413B', revenue:'$40B', growth:'+25%', pe:'28.7', founded:1923,
+   tagline:'Ozempic و Wegovy — داروهایی که بازار تریلیون‌دلاری چاقی را متحول کردند',
+   moat:'پیشگام GLP-1 با ۱۰+ سال مزیت تحقیقاتی بر رقبا',
+   revenue_breakdown:[
+     {name:'GLP-1 (Ozempic/Wegovy)',pct:65,color:'#4A7A5A'},
+     {name:'Insulin & Diabetes',pct:25,color:'#7AAA8A'},
+     {name:'Rare Disease',pct:10,color:'#AACFBA'},
+   ],
+   market_position:'پیشرو جهانی GLP-1. ارزش بازار از GDP دانمارک بیشتر است. کمبود جهانی دارو از شدت تقاضا.',
+   key_facts:[
+     'GDP دانمارک به خاطر این یک شرکت رشد کرد',
+     '۴۰٪ آمریکایی‌ها واجد شرایط داروی چاقی هستند',
+     'تنها در یک سال فروش Wegovy از صفر به $5B رسید',
+   ]},
+
+  {wave:'bio', sym:'LLY', name:'Eli Lilly and Company', country:'🇺🇸', sector:'Pharmaceuticals',
+   mktcap:'$718B', revenue:'$45B', growth:'+32%', pe:'65.2', founded:1876,
+   tagline:'رقیب اصلی Novo Nordisk در GLP-1 + پیشرو داروی آلزایمر',
+   moat:'Mounjaro و Zepbound — رقیب قوی Ozempic با تقاضای انفجاری',
+   revenue_breakdown:[
+     {name:'GLP-1 (Mounjaro/Zepbound)',pct:55,color:'#4A7A5A'},
+     {name:'Diabetes Legacy',pct:20,color:'#7AAA8A'},
+     {name:'Neuroscience',pct:10,color:'#AACFBA'},
+     {name:'Oncology',pct:8,color:'#C5E0CB'},
+     {name:'سایر',pct:7,color:'#DDEEE2'},
+   ],
+   market_position:'ارزش بازار $718B — بزرگ‌ترین شرکت دارویی آمریکا. Donanemab اولین داروی تأییدشده آلزایمر.',
+   key_facts:[
+     '۱۸۷۶: کلنل Eli Lilly — اولین انسولین تجاری ۱۹۲۳',
+     'Mounjaro: $5B+ فروش در اولین سال — رکورد تاریخ دارو',
+     'اگه بازار چاقی را بگیرند، یکی از ۳ شرکت بزرگ دنیا می‌شوند',
+   ]},
+
+  {wave:'bio', sym:'CRSP', name:'CRISPR Therapeutics', country:'🇨🇭', sector:'Biotech',
+   mktcap:'$3.9B', revenue:'$0.3B', growth:'+45%', pe:'-', founded:2013,
+   tagline:'اولین درمان تأییدشده CRISPR — ویرایش ژن به عنوان دارو',
+   moat:'اولین mover در درمان‌های CRISPR تجاری‌شده',
+   revenue_breakdown:[
+     {name:'Collaboration (Vertex)',pct:80,color:'#4A7A5A'},
+     {name:'Grant & Other',pct:20,color:'#AACFBA'},
+   ],
+   market_position:'Casgevy — اولین درمان CRISPR تأییدشده FDA برای کم‌خونی داسی‌شکل. هنوز اول راه است.',
+   key_facts:[
+     'بنیانگذار: Emmanuelle Charpentier، برنده نوبل ۲۰۲۰',
+     'CRISPR می‌تواند ده‌ها بیماری ژنتیکی لاعلاج را درمان کند',
+     'انقلابی‌ترین فناوری پزشکی قرن — ولی هنوز اوایل راه',
+   ]},
+
+  // ══ WAVE: MARKETS ══
+  {wave:'markets', sym:'V', name:'Visa Inc.', country:'🇺🇸', sector:'Payments',
+   mktcap:'$701B', revenue:'$36B', growth:'+10%', pe:'31.8', founded:1958,
+   tagline:'شبکه پرداخت جهانی — هر تراکنش کارت در ۲۰۰ کشور از اینجا رد می‌شود',
+   moat:'network effect دو طرفه — ۱۶۰M مکان پذیرش + میلیاردها کارت',
+   revenue_breakdown:[
+     {name:'Data Processing',pct:38,color:'#8B4A6B'},
+     {name:'Service Revenues',pct:33,color:'#B07A95'},
+     {name:'International',pct:25,color:'#D0AABF'},
+     {name:'سایر',pct:4,color:'#EDD5E5'},
+   ],
+   market_position:'$15 تریلیون تراکنش سالانه. PayPal، Apple Pay، Google Pay روی شبکه Visa کار می‌کنند، نه جایگزینش.',
+   key_facts:[
+     'Visa پول جابجا نمی‌کند — فقط پیام پرداخت منتقل می‌کند',
+     'تنها چین توانست با دستور دولتی UnionPay را جایگزین کند',
+     'حاشیه سود خالص بالای ۵۰٪ — یکی از سودآورترین مدل‌ها',
+   ]},
+
+  {wave:'markets', sym:'BLK', name:'BlackRock Inc.', country:'🇺🇸', sector:'Asset Management',
+   mktcap:'$158B', revenue:'$20B', growth:'+14%', pe:'22.3', founded:1988,
+   tagline:'$10 تریلیون دارایی — بزرگ‌ترین مدیر دارایی تاریخ بشر',
+   moat:'اندازه — مقیاس $10T مزایایی ایجاد می‌کند که رقیب نمی‌تواند تکرار کند',
+   revenue_breakdown:[
+     {name:'Investment Advisory',pct:74,color:'#8B4A6B'},
+     {name:'Technology (Aladdin)',pct:8,color:'#B07A95'},
+     {name:'Distribution Fees',pct:8,color:'#D0AABF'},
+     {name:'Performance Fees',pct:5,color:'#EDD5E5'},
+     {name:'سایر',pct:5,color:'#F5E8F0'},
+   ],
+   market_position:'سهامدار عمده همزمان Apple، Microsoft، Google و... است. Aladdin ریسک $21T دارایی را مدیریت می‌کند.',
+   key_facts:[
+     '۲۰۲۰: Fed از BlackRock خواست بازار اوراق را مدیریت کند',
+     '۲۰۲۴: Bitcoin ETF — $20B جذب در ۶ ماه',
+     'لری فینک با ۸ نفر شروع کرد، الان ۲۰,۰۰۰ کارمند',
+   ]},
+
+  {wave:'markets', sym:'RELIANCE', name:'Reliance Industries', country:'🇮🇳', sector:'Conglomerate',
+   mktcap:'$220B', revenue:'$119B', growth:'+7%', pe:'25.1', founded:1966,
+   tagline:'بزرگ‌ترین شرکت هند — نفت، Jio، و امپراطوری خرده‌فروشی',
+   moat:'Jio — اینترنت ارزان برای ۴۰۰ میلیون هندی + زیرساخت لجستیک',
+   revenue_breakdown:[
+     {name:'Oil to Chemicals',pct:55,color:'#8B4A6B'},
+     {name:'Jio (مخابرات)',pct:25,color:'#B07A95'},
+     {name:'Retail',pct:18,color:'#D0AABF'},
+     {name:'سایر',pct:2,color:'#EDD5E5'},
+   ],
+   market_position:'بزرگ‌ترین شرکت هند. Jio در ۳ سال ۴۰۰ میلیون مشترک — سریع‌ترین رشد مخابراتی تاریخ.',
+   key_facts:[
+     'Mukesh Ambani ثروتمندترین آسیایی',
+     'Jio با اینترنت رایگان، هند را دیجیتال کرد',
+     'هدف: نزدیک به $1 تریلیون ارزش در دهه آینده',
+   ]},
+
+  {wave:'markets', sym:'MELI', name:'MercadoLibre Inc.', country:'🇦🇷', sector:'E-commerce/Fintech',
+   mktcap:'$103B', revenue:'$20B', growth:'+37%', pe:'55.4', founded:1999,
+   tagline:'Amazon + PayPal آمریکای لاتین — ۲۰۰ میلیون کاربر در ۱۸ کشور',
+   moat:'network effect دو طرفه marketplace + fintech در منطقه با زیرساخت بانکی ضعیف',
+   revenue_breakdown:[
+     {name:'Fintech (Mercado Pago)',pct:52,color:'#8B4A6B'},
+     {name:'Commerce (Marketplace)',pct:48,color:'#B07A95'},
+   ],
+   market_position:'بزرگ‌ترین شرکت آمریکای لاتین. بانکداری موبایل برای میلیون‌ها نفر بدون حساب بانکی.',
+   key_facts:[
+     'برزیل، مکزیک، آرژانتین — ۶۵۰ میلیون نفر بازار',
+     'Fintech از marketplace بزرگ‌تر شده — تحول مدل کسب‌وکار',
+     'کرونا انفجار تجارت دیجیتال در لاتین را شتاب داد',
+   ]},
+
+  // ══ WAVE: DEFENSE ══
+  {wave:'defense', sym:'LMT', name:'Lockheed Martin', country:'🇺🇸', sector:'Defense',
+   mktcap:'$124B', revenue:'$67B', growth:'+5%', pe:'17.2', founded:1912,
+   tagline:'بزرگ‌ترین پیمانکار دفاعی جهان — F-35، THAAD، سیستم‌های فضایی',
+   moat:'قراردادهای دولتی چند دهه‌ای — F-35 تا ۲۰۷۰ تولید خواهد شد',
+   revenue_breakdown:[
+     {name:'Aeronautics (F-35)',pct:40,color:'#7A4A2A'},
+     {name:'Rotary & Mission',pct:25,color:'#A07050'},
+     {name:'Space Systems',pct:18,color:'#C8A07A'},
+     {name:'Missiles & Fire',pct:17,color:'#E0C8A0'},
+   ],
+   market_position:'~۷۰٪ درآمد از دولت آمریکا. F-35 — گران‌ترین سیستم تسلیحاتی تاریخ ($400B+ بودجه کل).',
+   key_facts:[
+     'جنگ اوکراین: تقاضای موشک HIMARS و PAC-3 انفجاری شد',
+     'بودجه دفاعی NATO رکورد تاریخی زد',
+     'F-35 تا ۲۰۷۰ پشتیبانی می‌شود — درآمد تضمین‌شده',
+   ]},
+
+  {wave:'defense', sym:'RHM', name:'Rheinmetall AG', country:'🇩🇪', sector:'Defense',
+   mktcap:'$47B', revenue:'$10B', growth:'+36%', pe:'38.9', founded:1889,
+   tagline:'بزرگ‌ترین تسلیحات‌ساز اروپا — تانک Leopard، مهمات، زرهی',
+   moat:'یگانه تأمین‌کننده مهمات توپخانه در مقیاس لازم برای اروپا',
+   revenue_breakdown:[
+     {name:'Vehicle Systems (تانک)',pct:40,color:'#7A4A2A'},
+     {name:'Weapon & Ammunition',pct:35,color:'#A07050'},
+     {name:'Electronic Solutions',pct:25,color:'#C8A07A'},
+   ],
+   market_position:'اروپا بعد از ۳۰ سال بی‌توجهی دارد مجدداً تسلیح می‌شود. Rheinmetall اصلی‌ترین ذینفع این تحول.',
+   key_facts:[
+     'سهام از ۲۰۲۲ تا ۲۰۲۴ بیش از ۵ برابر شد',
+     'جنگ اوکراین: سفارش‌های چند ساله از همه NATO',
+     '۱۳۵ سال سابقه — از جنگ‌های جهانی تا امروز',
+   ]},
+
+  {wave:'defense', sym:'CRWD', name:'CrowdStrike Holdings', country:'🇺🇸', sector:'Cybersecurity',
+   mktcap:'$87B', revenue:'$3.8B', growth:'+29%', pe:'89.2', founded:2011,
+   tagline:'پیشرو امنیت سایبری cloud-native — AI برای شناسایی تهدید',
+   moat:'Falcon platform + اثر شبکه داده — هر حمله جدید، همه مشتری‌ها محافظت می‌شوند',
+   revenue_breakdown:[
+     {name:'Subscription',pct:96,color:'#7A4A2A'},
+     {name:'Professional Services',pct:4,color:'#C8A07A'},
+   ],
+   market_position:'مشتریان: دولت آمریکا، Fortune 500، ارتش‌های غربی. حادثه ۲۰۲۴ نشان داد چقدر وابستگی وجود دارد.',
+   key_facts:[
+     'ژوئیه ۲۰۲۴: آپدیت معیوب — ۸.۵ میلیون ویندوز کرش کرد',
+     'با وجود بحران، اکثر مشتریان ماندند — نشانه moat قوی',
+     'هر حمله سایبری بزرگ دنیا، تقاضا را بالا می‌برد',
+   ]},
+
+  {wave:'defense', sym:'TSLA', name:'Tesla Inc.', country:'🇺🇸', sector:'EV / Energy',
+   mktcap:'$583B', revenue:'$97B', growth:'+1%', pe:'68.2', founded:2003,
+   tagline:'خودروی برقی + انرژی + نرم‌افزار خودران — بازار آن را شرکت تکنولوژی می‌بیند',
+   moat:'برند + شبکه Supercharger + داده خودران — رقبا دهه‌ها برای رسیدن نیاز دارند',
+   revenue_breakdown:[
+     {name:'Automotive',pct:78,color:'#7A4A2A'},
+     {name:'Energy & Storage',pct:11,color:'#A07050'},
+     {name:'Services & Other',pct:11,color:'#C8A07A'},
+   ],
+   market_position:'پیشرو EV در آمریکا، ولی BYD در جهان پیشی گرفته. Robotaxi و Optimus — شرط‌بندی آینده.',
+   key_facts:[
+     'Robotaxi و Optimus (ربات) — ماسک می‌گوید اینها آینده Tesla‌اند',
+     '۲۰۲۴: فشار رقابتی چین، افت فروش در بازارهای جهانی',
+     'بزرگ‌ترین شبکه Supercharger — حالا رقبا هم می‌توانند استفاده کنند',
+   ]},
+
+  {wave:'defense', sym:'BYD', name:'BYD Company', country:'🇨🇳', sector:'EV / Battery',
+   mktcap:'$115B', revenue:'$107B', growth:'+42%', pe:'21.4', founded:1995,
+   tagline:'بزرگ‌ترین فروشنده EV جهان — باتری، موتور، چیپ، همه داخلی',
+   moat:'زنجیره عمودی کامل — تنها خودروسازی که همه اجزا را خودش می‌سازد',
+   revenue_breakdown:[
+     {name:'Automobiles',pct:75,color:'#7A4A2A'},
+     {name:'Batteries & PV',pct:17,color:'#A07050'},
+     {name:'Electronics',pct:8,color:'#C8A07A'},
+   ],
+   market_position:'از Tesla در فروش جهانی EV پیشی گرفته. در ۲۰۲۴ در حال ورود به اروپاست — اتحادیه تعرفه گذاشت.',
+   key_facts:[
+     'Warren Buffett از ۲۰۰۸ سهامدار است — یکی از اولین سرمایه‌گذاری‌هایش در چین',
+     'تنها خودروساز با زنجیره عمودی کامل: باتری + موتور + چیپ',
+     'Wang Chuanfu با $300,000 وام شروع کرد — الان $107B درآمد',
+   ]},
+
+];
+
+// ── PIE COLORS MAPPING ──
+const WAVE_COLORS = {
+  ai:      ['#4A6FA5','#6B8FBF','#8AAFD9','#AACFF0','#C5E0F8'],
+  energy:  ['#7A6930','#9A8940','#BAAA60','#D8CB90','#EDE5C0'],
+  bio:     ['#4A7A5A','#6A9A7A','#8ABAA0','#AADAC0','#C8EEDA'],
+  markets: ['#8B4A6B','#AB6A8B','#CB8AAB','#E8B0CC','#F5D5E5'],
+  defense: ['#7A4A2A','#9A6A4A','#BA8A6A','#D8AA90','#EDCFB8'],
+};
+
+// ── RENDER CARDS ──
+function renderGrid(wave){
+  const companies = COMPANIES.filter(c=>c.wave===wave);
+  const grid = document.getElementById('grid-'+wave);
+  if(!grid) return;
+
+  companies.forEach(co=>{
+    const growthUp = co.growth.startsWith('+');
+    const growthColor = growthUp ? 'green' : 'red';
+    const waveColor = getComputedStyle(document.documentElement).getPropertyValue('--'+wave).trim();
+
+    // build legend
+    const legendHTML = co.revenue_breakdown.map(s=>`
+      <div class="legend-item">
+        <div class="legend-dot" style="background:${s.color}"></div>
+        <span class="legend-name">${s.name}</span>
+        <span class="legend-pct">${s.pct}%</span>
+      </div>`).join('');
+
+    const factsHTML = co.key_facts.map(f=>`
+      <div class="fact"><div class="fact-bullet"></div><span>${f}</span></div>`).join('');
+
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <div class="card-band" style="background:var(--${wave})"></div>
+      <div class="card-head">
+        <div class="card-top-row">
+          <div class="sym-block">
+            <div class="sym">${co.sym}</div>
+            <div class="sym-name">${co.name}</div>
+          </div>
+          <div class="card-badges">
+            <span class="badge badge-country">${co.country}</span>
+            <span class="badge badge-sector">${co.sector}</span>
+          </div>
+        </div>
+        <div class="card-tagline">${co.tagline}</div>
+      </div>
+
+      <div class="kpi-row">
+        <div class="kpi">
+          <div class="kpi-lbl">ارزش بازار</div>
+          <div class="kpi-val gold">${co.mktcap}</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-lbl">درآمد سالانه</div>
+          <div class="kpi-val">${co.revenue}</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-lbl">رشد YoY</div>
+          <div class="kpi-val ${growthColor}">${co.growth}</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-lbl">P/E</div>
+          <div class="kpi-val">${co.pe}</div>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="body-main">
+          <div class="pie-wrap">
+            <div class="pie-label">ترکیب درآمدی</div>
+            <canvas class="pie-canvas" width="90" height="90" id="pie-${co.sym}"></canvas>
+          </div>
+          <div class="pie-legend">${legendHTML}</div>
+        </div>
+
+        <div class="info-blocks">
+          <div class="info-block">
+            <div class="info-title">جایگاه بازار</div>
+            <div class="info-text">${co.market_position}</div>
+          </div>
+          <div class="info-block">
+            <div class="info-title">نکات کلیدی</div>
+            <div class="facts-list">${factsHTML}</div>
+          </div>
+        </div>
+
+        <div class="moat-row">
+          <div class="moat-label">مزیت رقابتی</div>
+          <div class="moat-tag">${co.moat}</div>
+        </div>
+      </div>`;
+
+    grid.appendChild(card);
+
+    // Draw pie after DOM insert
+    requestAnimationFrame(()=>{
+      const canvas = document.getElementById('pie-'+co.sym);
+      if(canvas) drawPie(canvas, co.revenue_breakdown);
+    });
+  });
+}
+
+// ── INIT ──
+['ai','energy','bio','markets','defense'].forEach(renderGrid);
+
+</script>
+
+<script>
+// ══════════════════════════════
+// TAB 2 JS
+// ══════════════════════════════
+// ── WAVE CONFIG ──
+const WAVES = {
+  ai:      { label: 'موج AI و چیپ',           color: '#6C8EF5', icon: '🤖' },
+  energy:  { label: 'موج انرژی و منابع',       color: '#F5A623', icon: '⚡' },
+  bio:     { label: 'موج بیوتک و سلامت',       color: '#3DBA7A', icon: '🧬' },
+  markets: { label: 'موج بازارهای نوظهور و مالی', color: '#C875A0', icon: '🌏' },
+  defense: { label: 'موج دفاع و خودرو',         color: '#E07050', icon: '🛡️' },
+};
+
+const QL_COLORS = ['ql-0','ql-1','ql-2','ql-3'];
+
+// ── SAMPLE DATA (جایگزین data.json میشه) ──
+const SAMPLE = {
+  generated: "نمونه",
+  companies: [
+    {sym:"NVDA", name:"NVIDIA Corporation", wave:"ai", price:131.4, ttm_pe:52.8, industry:"Semiconductors",
+     quarters:[
+       {label:"Q1 2026",revenue:44.1,eps:0.96,yoy:69},
+       {label:"Q4 2025",revenue:39.3,eps:0.89,yoy:78},
+       {label:"Q3 2025",revenue:35.1,eps:0.81,yoy:94},
+       {label:"Q2 2025",revenue:30.0,eps:0.68,yoy:122},
+     ], spark:[13,17,22,26,30,35,39,44]},
+    {sym:"TSM", name:"Taiwan Semiconductor", wave:"ai", price:182.6, ttm_pe:28.1, industry:"Foundry",
+     quarters:[
+       {label:"Q1 2026",revenue:25.5,eps:2.12,yoy:35},
+       {label:"Q4 2025",revenue:26.9,eps:2.24,yoy:39},
+       {label:"Q3 2025",revenue:23.5,eps:1.94,yoy:36},
+       {label:"Q2 2025",revenue:20.8,eps:1.71,yoy:40},
+     ], spark:[12,14,15,17,20,23,26,25]},
+    {sym:"ASML", name:"ASML Holding NV", wave:"ai", price:812.3, ttm_pe:38.4, industry:"Semiconductor Equip.",
+     quarters:[
+       {label:"Q1 2026",revenue:7.7,eps:6.31,yoy:46},
+       {label:"Q4 2025",revenue:9.3,eps:7.63,yoy:24},
+       {label:"Q3 2025",revenue:7.5,eps:5.74,yoy:12},
+       {label:"Q2 2025",revenue:6.2,eps:4.01,yoy:9},
+     ], spark:[5,5.5,6,6.2,7.5,9.3,7.7,8]},
+    {sym:"ARM", name:"Arm Holdings PLC", wave:"ai", price:148.2, ttm_pe:85.2, industry:"Semiconductor IP",
+     quarters:[
+       {label:"Q4 2025",revenue:1.24,eps:0.55,yoy:23},
+       {label:"Q3 2025",revenue:0.98,eps:0.39,yoy:14},
+       {label:"Q2 2025",revenue:0.94,eps:0.36,yoy:29},
+       {label:"Q1 2025",revenue:0.93,eps:0.36,yoy:47},
+     ], spark:[0.6,0.68,0.72,0.93,0.94,0.98,1.24,1.1]},
+    {sym:"MSFT", name:"Microsoft Corporation", wave:"ai", price:447.8, ttm_pe:36.1, industry:"Cloud/Software",
+     quarters:[
+       {label:"Q3 2026",revenue:70.1,eps:3.46,yoy:13},
+       {label:"Q2 2026",revenue:69.6,eps:3.23,yoy:12},
+       {label:"Q1 2026",revenue:65.6,eps:3.30,yoy:16},
+       {label:"Q4 2025",revenue:64.7,eps:3.12,yoy:15},
+     ], spark:[52,55,58,61,64,65,69,70]},
+    {sym:"GOOGL", name:"Alphabet Inc.", wave:"ai", price:192.5, ttm_pe:23.4, industry:"Internet Services",
+     quarters:[
+       {label:"Q1 2026",revenue:90.2,eps:2.81,yoy:12},
+       {label:"Q4 2025",revenue:96.5,eps:2.15,yoy:12},
+       {label:"Q3 2025",revenue:88.3,eps:2.12,yoy:15},
+       {label:"Q2 2025",revenue:84.7,eps:1.89,yoy:14},
+     ], spark:[68,72,76,80,84,88,96,90]},
+    {sym:"META", name:"Meta Platforms", wave:"ai", price:614.8, ttm_pe:27.9, industry:"Social Media",
+     quarters:[
+       {label:"Q1 2026",revenue:42.3,eps:6.43,yoy:16},
+       {label:"Q4 2025",revenue:48.4,eps:8.02,yoy:21},
+       {label:"Q3 2025",revenue:40.6,eps:6.03,yoy:19},
+       {label:"Q2 2025",revenue:39.1,eps:5.16,yoy:22},
+     ], spark:[28,31,34,36,39,40,48,42]},
+    {sym:"AMZN", name:"Amazon.com Inc.", wave:"ai", price:228.7, ttm_pe:44.7, industry:"Cloud/E-commerce",
+     quarters:[
+       {label:"Q1 2026",revenue:155.7,eps:1.59,yoy:9},
+       {label:"Q4 2025",revenue:187.8,eps:1.86,yoy:10},
+       {label:"Q3 2025",revenue:158.9,eps:1.43,yoy:11},
+       {label:"Q2 2025",revenue:148.0,eps:1.26,yoy:10},
+     ], spark:[120,127,134,140,148,158,187,155]},
+    {sym:"AVGO", name:"Broadcom Inc.", wave:"ai", price:248.3, ttm_pe:38.2, industry:"Semiconductors",
+     quarters:[
+       {label:"Q1 2026",revenue:14.9,eps:1.42,yoy:25},
+       {label:"Q4 2025",revenue:14.0,eps:1.42,yoy:51},
+       {label:"Q3 2025",revenue:13.1,eps:1.24,yoy:47},
+       {label:"Q2 2025",revenue:12.9,eps:1.18,yoy:43},
+     ], spark:[7,8,9,10,12,13,14,14.9]},
+    {sym:"PLTR", name:"Palantir Technologies", wave:"ai", price:31.2, ttm_pe:89.2, industry:"Data Analytics",
+     quarters:[
+       {label:"Q1 2026",revenue:0.88,eps:0.13,yoy:39},
+       {label:"Q4 2025",revenue:0.83,eps:0.14,yoy:36},
+       {label:"Q3 2025",revenue:0.73,eps:0.10,yoy:30},
+       {label:"Q2 2025",revenue:0.68,eps:0.09,yoy:27},
+     ], spark:[0.4,0.45,0.52,0.58,0.68,0.73,0.83,0.88]},
+    // energy
+    {sym:"CEG", name:"Constellation Energy", wave:"energy", price:214.3, ttm_pe:31.4, industry:"Nuclear Power",
+     quarters:[
+       {label:"Q1 2026",revenue:6.4,eps:3.41,yoy:11},
+       {label:"Q4 2025",revenue:7.1,eps:4.82,yoy:14},
+       {label:"Q3 2025",revenue:6.8,eps:3.60,yoy:9},
+       {label:"Q2 2025",revenue:5.7,eps:2.94,yoy:7},
+     ], spark:[4.8,5,5.4,5.7,6.8,7.1,6.4,6.8]},
+    {sym:"RIO", name:"Rio Tinto Group", wave:"energy", price:62.3, ttm_pe:10.8, industry:"Mining",
+     quarters:[
+       {label:"Q2 2025",revenue:13.8,eps:4.12,yoy:-3},
+       {label:"Q1 2025",revenue:12.9,eps:3.87,yoy:-2},
+       {label:"Q4 2024",revenue:15.1,eps:4.89,yoy:-5},
+       {label:"Q3 2024",revenue:13.2,eps:3.92,yoy:-4},
+     ], spark:[14,13.8,15.2,14,13.8,12.9,15.1,13.2]},
+    {sym:"DE", name:"Deere & Company", wave:"energy", price:361.2, ttm_pe:14.2, industry:"Machinery",
+     quarters:[
+       {label:"Q1 2026",revenue:8.1,eps:4.09,yoy:-30},
+       {label:"Q4 2025",revenue:9.8,eps:6.23,yoy:-28},
+       {label:"Q3 2025",revenue:10.2,eps:6.29,yoy:-33},
+       {label:"Q2 2025",revenue:12.8,eps:8.53,yoy:-17},
+     ], spark:[15,13.5,12.8,10.2,9.8,8.1,8.5,9]},
+    // bio
+    {sym:"NVO", name:"Novo Nordisk A/S", wave:"bio", price:93.2, ttm_pe:28.7, industry:"Pharmaceuticals",
+     quarters:[
+       {label:"Q1 2026",revenue:11.0,eps:0.88,yoy:19},
+       {label:"Q4 2025",revenue:11.3,eps:0.90,yoy:22},
+       {label:"Q3 2025",revenue:10.3,eps:0.82,yoy:24},
+       {label:"Q2 2025",revenue:9.5,eps:0.75,yoy:25},
+     ], spark:[6,7,8,9,9.5,10.3,11.3,11]},
+    {sym:"LLY", name:"Eli Lilly", wave:"bio", price:812.5, ttm_pe:65.2, industry:"Pharmaceuticals",
+     quarters:[
+       {label:"Q1 2026",revenue:12.7,eps:3.34,yoy:45},
+       {label:"Q4 2025",revenue:13.5,eps:5.32,yoy:45},
+       {label:"Q3 2025",revenue:11.4,eps:1.18,yoy:42},
+       {label:"Q2 2025",revenue:11.3,eps:3.92,yoy:36},
+     ], spark:[6,7.5,8.8,10,11.3,11.4,13.5,12.7]},
+    {sym:"CRSP", name:"CRISPR Therapeutics", wave:"bio", price:48.7, ttm_pe:null, industry:"Biotech",
+     quarters:[
+       {label:"Q1 2026",revenue:0.08,eps:-0.41,yoy:60},
+       {label:"Q4 2025",revenue:0.10,eps:-0.28,yoy:45},
+       {label:"Q3 2025",revenue:0.07,eps:-0.52,yoy:40},
+       {label:"Q2 2025",revenue:0.05,eps:-0.61,yoy:25},
+     ], spark:[0.02,0.03,0.04,0.05,0.07,0.10,0.08,0.09]},
+    // markets
+    {sym:"V", name:"Visa Inc.", wave:"markets", price:333.1, ttm_pe:31.8, industry:"Payments",
+     quarters:[
+       {label:"Q2 2026",revenue:9.6,eps:2.76,yoy:10},
+       {label:"Q1 2026",revenue:9.3,eps:2.67,yoy:9},
+       {label:"Q4 2025",revenue:9.5,eps:2.58,yoy:11},
+       {label:"Q3 2025",revenue:8.9,eps:2.42,yoy:10},
+     ], spark:[7.2,7.5,7.8,8.2,8.9,9.5,9.3,9.6]},
+    {sym:"BLK", name:"BlackRock Inc.", wave:"markets", price:1042.5, ttm_pe:22.3, industry:"Asset Management",
+     quarters:[
+       {label:"Q1 2026",revenue:5.28,eps:11.30,yoy:12},
+       {label:"Q4 2025",revenue:5.68,eps:11.93,yoy:14},
+       {label:"Q3 2025",revenue:5.20,eps:11.46,yoy:15},
+       {label:"Q2 2025",revenue:4.96,eps:10.36,yoy:12},
+     ], spark:[3.8,4,4.3,4.6,4.9,5.2,5.6,5.2]},
+    {sym:"JPM", name:"JPMorgan Chase", wave:"markets", price:228.1, ttm_pe:12.1, industry:"Banking",
+     quarters:[
+       {label:"Q1 2026",revenue:45.3,eps:5.07,yoy:8},
+       {label:"Q4 2025",revenue:43.7,eps:4.81,yoy:11},
+       {label:"Q3 2025",revenue:42.7,eps:4.37,yoy:7},
+       {label:"Q2 2025",revenue:50.2,eps:6.12,yoy:20},
+     ], spark:[36,38,40,42,50,42,43,45]},
+    {sym:"MELI", name:"MercadoLibre Inc.", wave:"markets", price:2185.0, ttm_pe:55.4, industry:"E-commerce/Fintech",
+     quarters:[
+       {label:"Q1 2026",revenue:5.9,eps:8.34,yoy:35},
+       {label:"Q4 2025",revenue:6.1,eps:12.61,yoy:38},
+       {label:"Q3 2025",revenue:5.3,eps:7.83,yoy:35},
+       {label:"Q2 2025",revenue:5.1,eps:10.48,yoy:41},
+     ], spark:[2.8,3.2,3.7,4.2,5.1,5.3,6.1,5.9]},
+    // defense
+    {sym:"LMT", name:"Lockheed Martin", wave:"defense", price:512.4, ttm_pe:17.2, industry:"Defense",
+     quarters:[
+       {label:"Q1 2026",revenue:17.9,eps:7.28,yoy:4},
+       {label:"Q4 2025",revenue:18.6,eps:7.67,yoy:5},
+       {label:"Q3 2025",revenue:17.1,eps:6.84,yoy:3},
+       {label:"Q2 2025",revenue:18.1,eps:7.11,yoy:9},
+     ], spark:[15,15.5,16,17,18.1,17.1,18.6,17.9]},
+    {sym:"CRWD", name:"CrowdStrike Holdings", wave:"defense", price:411.2, ttm_pe:89.2, industry:"Cybersecurity",
+     quarters:[
+       {label:"Q1 2026",revenue:1.10,eps:1.00,yoy:25},
+       {label:"Q4 2025",revenue:1.06,eps:0.93,yoy:25},
+       {label:"Q3 2025",revenue:1.01,eps:0.93,yoy:29},
+       {label:"Q2 2025",revenue:0.92,eps:0.97,yoy:32},
+     ], spark:[0.6,0.69,0.79,0.92,1.01,1.06,1.10,1.14]},
+    {sym:"TSLA", name:"Tesla Inc.", wave:"defense", price:182.3, ttm_pe:68.2, industry:"EV/Energy",
+     quarters:[
+       {label:"Q1 2026",revenue:19.3,eps:0.27,yoy:-9},
+       {label:"Q4 2025",revenue:25.7,eps:0.73,yoy:2},
+       {label:"Q3 2025",revenue:25.2,eps:0.72,yoy:8},
+       {label:"Q2 2025",revenue:22.7,eps:0.40,yoy:-7},
+     ], spark:[19,20,23,22.7,25.2,25.7,19.3,20]},
+    {sym:"BYD", name:"BYD Company", wave:"defense", price:42.1, ttm_pe:21.4, industry:"EV/Battery",
+     quarters:[
+       {label:"Q1 2026",revenue:28.4,eps:0.52,yoy:40},
+       {label:"Q4 2025",revenue:32.6,eps:0.71,yoy:45},
+       {label:"Q3 2025",revenue:27.0,eps:0.60,yoy:38},
+       {label:"Q2 2025",revenue:24.0,eps:0.47,yoy:39},
+     ], spark:[14,16,18,21,24,27,32,28]},
+    {sym:"CAT", name:"Caterpillar Inc.", wave:"defense", price:361.2, ttm_pe:16.1, industry:"Heavy Equipment",
+     quarters:[
+       {label:"Q1 2026",revenue:14.2,eps:4.25,yoy:-2},
+       {label:"Q4 2025",revenue:16.2,eps:5.14,yoy:1},
+       {label:"Q3 2025",revenue:16.1,eps:5.06,yoy:4},
+       {label:"Q2 2025",revenue:16.7,eps:5.48,yoy:4},
+     ], spark:[14,15,16,17,16.7,16.1,16.2,14.2]},
+  ]
+};
+
+let currentWave = 'all';
+let DATA = SAMPLE;
+
+// ── TRY LOAD data.json ──
+async function finTryLoad(){
+  // همیشه اول داده نمونه رو نشون بده
+  finRenderAll();
+  try {
+    const r = await fetch('data.json');
+    if(r.ok){
+      const json = await r.json();
+      if(json && json.companies && json.companies.length){
+        DATA = json;
+        const ub=document.getElementById('demoBanner'); if(ub) ub.textContent='آپدیت: '+DATA.generated;
+        const banner = document.getElementById('demoBanner');
+        if(banner) banner.style.display = 'none';
+        finRenderAll();
+      }
+    }
+  } catch(e){ /* بدون سرور — داده نمونه کافیه */ }
+}
+
+// ── SPARKLINE SVG ──
+function sparkSVG(values, color){
+  if(!values || values.length < 2) return '';
+  const W=260, H=36, pad=2;
+  const mn=Math.min(...values), mx=Math.max(...values);
+  const range=mx-mn||1;
+  const pts = values.map((v,i)=>{
+    const x = pad + (i/(values.length-1))*(W-pad*2);
+    const y = H - pad - ((v-mn)/range)*(H-pad*2);
+    return `${x},${y}`;
+  }).join(' ');
+  // gradient fill
+  const fillPts = pts + ` ${W-pad},${H-pad} ${pad},${H-pad}`;
+  return `<svg class="spark-svg" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="sg-${color.replace('#','')}" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="${color}" stop-opacity=".25"/>
+        <stop offset="100%" stop-color="${color}" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <polygon points="${fillPts}" fill="url(#sg-${color.replace('#','')})" />
+    <polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="${W-pad}" cy="${H - pad - ((values[values.length-1]-mn)/range)*(H-pad*2)}" r="2.5" fill="${color}"/>
+  </svg>`;
+}
+
+// ── BUILD CARD ──
+function buildCard(co){
+  const wv = WAVES[co.wave] || {color:'#888',label:'',icon:''};
+  const qRows = (co.quarters||[]).map((q,i)=>{
+    const yoyHtml = q.yoy !== null && q.yoy !== undefined
+      ? `<span class="yoy-badge ${q.yoy>=0?'yoy-up':'yoy-dn'}">${q.yoy>=0?'▲':'▼'} ${Math.abs(q.yoy)}%</span>`
+      : `<span class="yoy-na">—</span>`;
+    const epsHtml = q.eps !== null && q.eps !== undefined
+      ? `<span class="eps-val">$${q.eps}</span>`
+      : `<span class="eps-na">N/A</span>`;
+    return `<tr>
+      <td><span class="ql ${QL_COLORS[i]||'ql-3'}">${q.label}</span></td>
+      <td class="rev-val">$${q.revenue}B</td>
+      <td>${epsHtml}</td>
+      <td>${yoyHtml}</td>
+    </tr>`;
+  }).join('');
+
+  const price = co.price ? `$${co.price.toLocaleString()}` : '—';
+  const pe    = co.ttm_pe ? co.ttm_pe : '—';
+
+  return `<div class="fin-card">
+    <div class="fin-card-top" style="background:${wv.color}"></div>
+    <div class="fin-card-head">
+      <div>
+        <div class="fin-sym">${co.sym}</div>
+        <div class="fin-name">${co.name}</div>
+        <div class="fin-subtitle">آخرین ۴ فصل مالی</div>
+      </div>
+      <div class="fin-price-block">
+        <div class="fin-price">${price}</div>
+        <div class="fin-pe">P/E: ${pe}</div>
+      </div>
+    </div>
+
+    <div class="spark-wrap">
+      <div class="spark-label">Revenue — روند ۸ فصل</div>
+      ${sparkSVG(co.spark, wv.color)}
+    </div>
+
+    <div class="q-table-wrap">
+      <table class="q-table">
+        <thead><tr>
+          <th>فصل</th>
+          <th>Revenue (B)</th>
+          <th>EPS</th>
+          <th>YoY</th>
+        </tr></thead>
+        <tbody>${qRows}</tbody>
+      </table>
+    </div>
+
+    <div class="fin-card-foot">
+      <div class="foot-cell">
+        <div class="foot-lbl">قیمت</div>
+        <div class="foot-val">${price}</div>
+      </div>
+      <div class="foot-cell">
+        <div class="foot-lbl">صنعت</div>
+        <div class="foot-val ind">${co.industry||'—'}</div>
+      </div>
+    </div>
+  </div>`;
+}
+
+// ── RENDER ALL ──
+function finRenderAll(){
+  const content = document.getElementById('fin-content');
+  if(!content) return;
+  const waves = Object.keys(WAVES);
+  let html = '';
+
+  waves.forEach(wk=>{
+    if(currentWave !== 'all' && currentWave !== wk) return;
+    const wv = WAVES[wk];
+    const cos = DATA.companies.filter(c=>c.wave===wk);
+    if(!cos.length) return;
+
+    html += `<div class="fin-wave-section" data-wave="${wk}">
+      <div class="fin-wave-head">
+        <div class="fin-wave-stripe" style="background:${wv.color}"></div>
+        <div class="fin-wave-title" style="color:${wv.color}">${wv.icon} ${wv.label}</div>
+        <div class="fin-wave-count">${cos.length} شرکت</div>
+      </div>
+      <div class="fin-wave-grid">
+        ${cos.map(buildCard).join('')}
+      </div>
+    </div>`;
+  });
+
+  content.innerHTML = html || '<div class="empty"><div class="empty-icon">🔍</div><div class="empty-title">شرکتی یافت نشد</div></div>';
+}
+
+// ── FILTER ──
+function finFilterWave(w){
+  currentWave = w;
+  document.querySelectorAll('.filter-pill').forEach(p=>{
+    p.classList.toggle('active', p.dataset.wave === w);
+  });
+  finRenderAll();
+}
+
+// ── INIT ──
+finTryLoad();
+
+</script>
+
+</body>
+</html>
