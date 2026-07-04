@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-03 12:30 UTC",
+  "generated": "2026-07-04 11:12 UTC",
   "companies": [
     {
       "sym": "NVDA",
@@ -917,8 +917,8 @@
       "sym": "RHM.DE",
       "name": "Rheinmetall AG",
       "wave": "defense",
-      "price": 1101.6,
-      "ttm_pe": 48.68,
+      "price": 1093.4,
+      "ttm_pe": 48.08,
       "industry": "Defense",
       "quarters": [
         {
