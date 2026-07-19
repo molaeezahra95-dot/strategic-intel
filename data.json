@@ -1,12 +1,12 @@
 {
-  "generated": "2026-07-18 07:43 UTC",
+  "generated": "2026-07-19 08:11 UTC",
   "companies": [
     {
       "sym": "NVDA",
       "name": "NVIDIA Corporation",
       "wave": "ai",
       "price": 202.81,
-      "ttm_pe": 31.74,
+      "ttm_pe": 31.06,
       "industry": "Semiconductors",
       "quarters": [
         {
@@ -47,7 +47,7 @@
       "name": "Taiwan Semiconductor",
       "wave": "ai",
       "price": 398.37,
-      "ttm_pe": 30.67,
+      "ttm_pe": 29.84,
       "industry": "Foundry",
       "quarters": [
         {
@@ -88,7 +88,7 @@
       "name": "ASML Holding NV",
       "wave": "ai",
       "price": 1747.58,
-      "ttm_pe": 56.81,
+      "ttm_pe": 60.24,
       "industry": "Semiconductor Equip.",
       "quarters": [
         {
@@ -170,7 +170,7 @@
       "name": "Microsoft Corporation",
       "wave": "ai",
       "price": 393.82,
-      "ttm_pe": 23.43,
+      "ttm_pe": 23.47,
       "industry": "Cloud/Software",
       "quarters": [
         {
@@ -211,7 +211,7 @@
       "name": "Alphabet Inc.",
       "wave": "ai",
       "price": 346.77,
-      "ttm_pe": 27.03,
+      "ttm_pe": 26.45,
       "industry": "Internet Services",
       "quarters": [
         {
@@ -252,7 +252,7 @@
       "name": "Meta Platforms",
       "wave": "ai",
       "price": 646.01,
-      "ttm_pe": 24.16,
+      "ttm_pe": 23.47,
       "industry": "Social Media",
       "quarters": [
         {
@@ -293,7 +293,7 @@
       "name": "Amazon.com Inc.",
       "wave": "ai",
       "price": 247.23,
-      "ttm_pe": 29.86,
+      "ttm_pe": 29.57,
       "industry": "Cloud/E-commerce",
       "quarters": [
         {
@@ -334,7 +334,7 @@
       "name": "Broadcom Inc.",
       "wave": "ai",
       "price": 370.82,
-      "ttm_pe": 62.11,
+      "ttm_pe": 61.7,
       "industry": "Semiconductors",
       "quarters": [
         {
@@ -415,8 +415,8 @@
       "sym": "2222.SR",
       "name": "Saudi Aramco",
       "wave": "energy",
-      "price": 26.68,
-      "ttm_pe": 17.32,
+      "price": 26.66,
+      "ttm_pe": 17.31,
       "industry": "Oil & Gas",
       "quarters": [
         {
@@ -498,7 +498,7 @@
       "name": "Rio Tinto Group",
       "wave": "energy",
       "price": 90.15,
-      "ttm_pe": 14.9,
+      "ttm_pe": 14.8,
       "industry": "Mining",
       "quarters": [],
       "spark": []
@@ -508,7 +508,7 @@
       "name": "Deere & Company",
       "wave": "energy",
       "price": 597.24,
-      "ttm_pe": 33.9,
+      "ttm_pe": 33.78,
       "industry": "Machinery",
       "quarters": [
         {
@@ -549,7 +549,7 @@
       "name": "Novo Nordisk A/S",
       "wave": "bio",
       "price": 50.32,
-      "ttm_pe": 12.36,
+      "ttm_pe": 12.07,
       "industry": "Pharmaceuticals",
       "quarters": [
         {
@@ -590,7 +590,7 @@
       "name": "Eli Lilly",
       "wave": "bio",
       "price": 1179.11,
-      "ttm_pe": 41.49,
+      "ttm_pe": 41.84,
       "industry": "Pharmaceuticals",
       "quarters": [
         {
@@ -672,7 +672,7 @@
       "name": "Visa Inc.",
       "wave": "markets",
       "price": 358.56,
-      "ttm_pe": 31.84,
+      "ttm_pe": 31.26,
       "industry": "Payments",
       "quarters": [
         {
@@ -713,13 +713,13 @@
       "name": "BlackRock Inc.",
       "wave": "markets",
       "price": 1072.2,
-      "ttm_pe": 26.04,
+      "ttm_pe": 25.71,
       "industry": "Asset Management",
       "quarters": [
         {
           "label": "Q2 2026",
           "revenue": null,
-          "eps": 41.17,
+          "eps": 41.71,
           "yoy": null
         },
         {
@@ -754,13 +754,13 @@
       "name": "JPMorgan Chase",
       "wave": "markets",
       "price": 341.1,
-      "ttm_pe": 14.71,
+      "ttm_pe": 14.62,
       "industry": "Banking",
       "quarters": [
         {
           "label": "Q2 2026",
           "revenue": null,
-          "eps": 23.19,
+          "eps": 23.33,
           "yoy": null
         },
         {
@@ -795,7 +795,7 @@
       "name": "MercadoLibre Inc.",
       "wave": "markets",
       "price": 1813.91,
-      "ttm_pe": 49.02,
+      "ttm_pe": 47.85,
       "industry": "E-commerce/Fintech",
       "quarters": [
         {
@@ -836,7 +836,7 @@
       "name": "Reliance Industries",
       "wave": "markets",
       "price": 1327.2,
-      "ttm_pe": 21.74,
+      "ttm_pe": 24.04,
       "industry": "Conglomerate",
       "quarters": [
         {
@@ -877,7 +877,7 @@
       "name": "Lockheed Martin",
       "wave": "defense",
       "price": 508.77,
-      "ttm_pe": 24.88,
+      "ttm_pe": 24.63,
       "industry": "Defense",
       "quarters": [
         {
@@ -918,7 +918,7 @@
       "name": "Rheinmetall AG",
       "wave": "defense",
       "price": 984.2,
-      "ttm_pe": 43.45,
+      "ttm_pe": 43.28,
       "industry": "Defense",
       "quarters": [
         {
@@ -1000,7 +1000,7 @@
       "name": "Tesla Inc.",
       "wave": "defense",
       "price": 380.84,
-      "ttm_pe": 349.39,
+      "ttm_pe": 346.22,
       "industry": "EV/Energy",
       "quarters": [
         {
@@ -1082,7 +1082,7 @@
       "name": "Caterpillar Inc.",
       "wave": "defense",
       "price": 880.28,
-      "ttm_pe": 43.66,
+      "ttm_pe": 43.86,
       "industry": "Heavy Equipment",
       "quarters": [
         {
