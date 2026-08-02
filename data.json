@@ -1,12 +1,12 @@
 {
-  "generated": "2026-08-01 08:14 UTC",
+  "generated": "2026-08-02 08:17 UTC",
   "companies": [
     {
       "sym": "NVDA",
       "name": "NVIDIA Corporation",
       "wave": "ai",
       "price": 200.75,
-      "ttm_pe": 29.83,
+      "ttm_pe": 30.79,
       "industry": "Semiconductors",
       "quarters": [
         {
@@ -47,7 +47,7 @@
       "name": "Taiwan Semiconductor",
       "wave": "ai",
       "price": 404.25,
-      "ttm_pe": 35.46,
+      "ttm_pe": 35.59,
       "industry": "Foundry",
       "quarters": [
         {
@@ -170,7 +170,7 @@
       "name": "Microsoft Corporation",
       "wave": "ai",
       "price": 464.72,
-      "ttm_pe": 25.12,
+      "ttm_pe": 25.9,
       "industry": "Cloud/Software",
       "quarters": [
         {
@@ -211,7 +211,7 @@
       "name": "Alphabet Inc.",
       "wave": "ai",
       "price": 356.13,
-      "ttm_pe": 16.75,
+      "ttm_pe": 17.86,
       "industry": "Internet Services",
       "quarters": [
         {
@@ -334,7 +334,7 @@
       "name": "Broadcom Inc.",
       "wave": "ai",
       "price": 389.28,
-      "ttm_pe": 64.56,
+      "ttm_pe": 64.99,
       "industry": "Semiconductors",
       "quarters": [
         {
@@ -415,8 +415,8 @@
       "sym": "2222.SR",
       "name": "Saudi Aramco",
       "wave": "energy",
-      "price": 26.48,
-      "ttm_pe": 17.19,
+      "price": 26.62,
+      "ttm_pe": 17.29,
       "industry": "Oil & Gas",
       "quarters": [
         {
@@ -457,7 +457,7 @@
       "name": "Constellation Energy",
       "wave": "energy",
       "price": 262.75,
-      "ttm_pe": 22.89,
+      "ttm_pe": 22.83,
       "industry": "Nuclear Power",
       "quarters": [
         {
@@ -498,7 +498,7 @@
       "name": "Rio Tinto Group",
       "wave": "energy",
       "price": 96.85,
-      "ttm_pe": 13.16,
+      "ttm_pe": 13.12,
       "industry": "Mining",
       "quarters": [],
       "spark": []
@@ -508,7 +508,7 @@
       "name": "Deere & Company",
       "wave": "energy",
       "price": 592.67,
-      "ttm_pe": 34.02,
+      "ttm_pe": 33.56,
       "industry": "Machinery",
       "quarters": [
         {
@@ -549,7 +549,7 @@
       "name": "Novo Nordisk A/S",
       "wave": "bio",
       "price": 47.08,
-      "ttm_pe": 11.26,
+      "ttm_pe": 11.21,
       "industry": "Pharmaceuticals",
       "quarters": [
         {
@@ -590,7 +590,7 @@
       "name": "Eli Lilly",
       "wave": "bio",
       "price": 1148.84,
-      "ttm_pe": 40.99,
+      "ttm_pe": 40.81,
       "industry": "Pharmaceuticals",
       "quarters": [
         {
@@ -713,13 +713,13 @@
       "name": "BlackRock Inc.",
       "wave": "markets",
       "price": 1090.39,
-      "ttm_pe": 26.32,
+      "ttm_pe": 26.11,
       "industry": "Asset Management",
       "quarters": [
         {
           "label": "Q2 2026",
           "revenue": null,
-          "eps": 41.43,
+          "eps": 41.76,
           "yoy": null
         },
         {
@@ -754,13 +754,13 @@
       "name": "JPMorgan Chase",
       "wave": "markets",
       "price": 351.79,
-      "ttm_pe": 15.04,
+      "ttm_pe": 15.09,
       "industry": "Banking",
       "quarters": [
         {
           "label": "Q2 2026",
           "revenue": null,
-          "eps": 23.39,
+          "eps": 23.32,
           "yoy": null
         },
         {
@@ -795,7 +795,7 @@
       "name": "MercadoLibre Inc.",
       "wave": "markets",
       "price": 1877.95,
-      "ttm_pe": 49.75,
+      "ttm_pe": 49.51,
       "industry": "E-commerce/Fintech",
       "quarters": [
         {
@@ -877,7 +877,7 @@
       "name": "Lockheed Martin",
       "wave": "defense",
       "price": 582.74,
-      "ttm_pe": 21.18,
+      "ttm_pe": 21.5,
       "industry": "Defense",
       "quarters": [
         {
@@ -918,7 +918,7 @@
       "name": "Rheinmetall AG",
       "wave": "defense",
       "price": 1140.0,
-      "ttm_pe": 50.26,
+      "ttm_pe": 50.24,
       "industry": "Defense",
       "quarters": [
         {
@@ -1082,7 +1082,7 @@
       "name": "Caterpillar Inc.",
       "wave": "defense",
       "price": 814.81,
-      "ttm_pe": 40.32,
+      "ttm_pe": 40.66,
       "industry": "Heavy Equipment",
       "quarters": [
         {
