@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-09 06:50 UTC",
+  "generated": "2026-08-10 07:25 UTC",
   "companies": [
     {
       "sym": "NVDA",
@@ -415,8 +415,8 @@
       "sym": "2222.SR",
       "name": "Saudi Aramco",
       "wave": "energy",
-      "price": 26.5,
-      "ttm_pe": 17.21,
+      "price": 26.62,
+      "ttm_pe": 17.29,
       "industry": "Oil & Gas",
       "quarters": [
         {
@@ -594,10 +594,16 @@
       "industry": "Pharmaceuticals",
       "quarters": [
         {
+          "label": "Q2 2026",
+          "revenue": 22.97,
+          "eps": 7.94,
+          "yoy": 48
+        },
+        {
           "label": "Q1 2026",
           "revenue": 19.8,
           "eps": 8.26,
-          "yoy": 56
+          "yoy": null
         },
         {
           "label": "Q4 2025",
@@ -610,20 +616,14 @@
           "revenue": 17.6,
           "eps": 6.21,
           "yoy": 45
-        },
-        {
-          "label": "Q2 2025",
-          "revenue": 15.56,
-          "eps": 6.29,
-          "yoy": 45
         }
       ],
       "spark": [
-        12.7,
         15.6,
         17.6,
         19.3,
-        19.8
+        19.8,
+        23.0
       ]
     },
     {
@@ -719,7 +719,7 @@
         {
           "label": "Q2 2026",
           "revenue": 7.08,
-          "eps": 11.63,
+          "eps": 11.62,
           "yoy": 31
         },
         {
@@ -759,15 +759,15 @@
       "quarters": [
         {
           "label": "Q2 2026",
-          "revenue": null,
-          "eps": 23.35,
-          "yoy": null
+          "revenue": 52.85,
+          "eps": 7.85,
+          "yoy": 18
         },
         {
           "label": "Q1 2026",
           "revenue": 49.83,
           "eps": 6.06,
-          "yoy": 10
+          "yoy": null
         },
         {
           "label": "Q4 2025",
@@ -783,11 +783,11 @@
         }
       ],
       "spark": [
-        45.3,
         44.9,
         46.4,
         45.8,
-        49.8
+        49.8,
+        52.9
       ]
     },
     {
@@ -799,10 +799,16 @@
       "industry": "E-commerce/Fintech",
       "quarters": [
         {
+          "label": "Q2 2026",
+          "revenue": 10.17,
+          "eps": 9.19,
+          "yoy": 50
+        },
+        {
           "label": "Q1 2026",
           "revenue": 8.85,
           "eps": 8.23,
-          "yoy": 49
+          "yoy": null
         },
         {
           "label": "Q4 2025",
@@ -815,28 +821,22 @@
           "revenue": 7.41,
           "eps": 8.3,
           "yoy": 39
-        },
-        {
-          "label": "Q2 2025",
-          "revenue": 6.79,
-          "eps": 10.32,
-          "yoy": 39
         }
       ],
       "spark": [
-        5.9,
         6.8,
         7.4,
         8.8,
-        8.8
+        8.8,
+        10.2
       ]
     },
     {
       "sym": "RELIANCE.NS",
       "name": "Reliance Industries",
       "wave": "markets",
-      "price": 1334.8,
-      "ttm_pe": 24.15,
+      "price": 1326.6,
+      "ttm_pe": 24.01,
       "industry": "Conglomerate",
       "quarters": [
         {
@@ -917,8 +917,8 @@
       "sym": "RHM.DE",
       "name": "Rheinmetall AG",
       "wave": "defense",
-      "price": 1146.4,
-      "ttm_pe": 44.06,
+      "price": 1151.6,
+      "ttm_pe": 44.26,
       "industry": "Defense",
       "quarters": [
         {
