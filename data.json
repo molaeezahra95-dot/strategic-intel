@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-23 06:34 UTC",
+  "generated": "2026-08-24 06:50 UTC",
   "companies": [
     {
       "sym": "NVDA",
@@ -835,8 +835,8 @@
       "sym": "RELIANCE.NS",
       "name": "Reliance Industries",
       "wave": "markets",
-      "price": 1316.0,
-      "ttm_pe": 23.81,
+      "price": 1307.5,
+      "ttm_pe": 23.66,
       "industry": "Conglomerate",
       "quarters": [
         {
