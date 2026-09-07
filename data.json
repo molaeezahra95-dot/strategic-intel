@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-06 10:12 UTC",
+  "generated": "2026-09-07 11:29 UTC",
   "companies": [
     {
       "sym": "NVDA",
@@ -415,8 +415,8 @@
       "sym": "2222.SR",
       "name": "Saudi Aramco",
       "wave": "energy",
-      "price": 26.04,
-      "ttm_pe": 15.41,
+      "price": 26.0,
+      "ttm_pe": 15.38,
       "industry": "Oil & Gas",
       "quarters": [
         {
@@ -835,8 +835,8 @@
       "sym": "RELIANCE.NS",
       "name": "Reliance Industries",
       "wave": "markets",
-      "price": 1322.0,
-      "ttm_pe": 23.92,
+      "price": 1309.5,
+      "ttm_pe": 23.7,
       "industry": "Conglomerate",
       "quarters": [
         {
@@ -917,8 +917,8 @@
       "sym": "RHM.DE",
       "name": "Rheinmetall AG",
       "wave": "defense",
-      "price": 1034.0,
-      "ttm_pe": 39.68,
+      "price": 1019.4,
+      "ttm_pe": 39.12,
       "industry": "Defense",
       "quarters": [
         {
