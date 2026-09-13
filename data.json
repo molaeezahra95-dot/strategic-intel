@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-12 10:00 UTC",
+  "generated": "2026-09-13 11:02 UTC",
   "companies": [
     {
       "sym": "NVDA",
@@ -47,7 +47,7 @@
       "name": "Taiwan Semiconductor",
       "wave": "ai",
       "price": 433.24,
-      "ttm_pe": 31.55,
+      "ttm_pe": 31.95,
       "industry": "Foundry",
       "quarters": [
         {
@@ -129,7 +129,7 @@
       "name": "Arm Holdings PLC",
       "wave": "ai",
       "price": 264.79,
-      "ttm_pe": 257.08,
+      "ttm_pe": 270.19,
       "industry": "Semiconductor IP",
       "quarters": [
         {
@@ -170,7 +170,7 @@
       "name": "Microsoft Corporation",
       "wave": "ai",
       "price": 495.63,
-      "ttm_pe": 27.4,
+      "ttm_pe": 27.63,
       "industry": "Cloud/Software",
       "quarters": [
         {
@@ -252,7 +252,7 @@
       "name": "Meta Platforms",
       "wave": "ai",
       "price": 648.03,
-      "ttm_pe": 24.27,
+      "ttm_pe": 24.39,
       "industry": "Social Media",
       "quarters": [
         {
@@ -334,7 +334,7 @@
       "name": "Broadcom Inc.",
       "wave": "ai",
       "price": 361.99,
-      "ttm_pe": 46.05,
+      "ttm_pe": 46.23,
       "industry": "Semiconductors",
       "quarters": [
         {
@@ -375,7 +375,7 @@
       "name": "Palantir Technologies",
       "wave": "ai",
       "price": 167.23,
-      "ttm_pe": 140.53,
+      "ttm_pe": 142.93,
       "industry": "Data Analytics",
       "quarters": [
         {
@@ -415,8 +415,8 @@
       "sym": "2222.SR",
       "name": "Saudi Aramco",
       "wave": "energy",
-      "price": 26.14,
-      "ttm_pe": 15.47,
+      "price": 25.82,
+      "ttm_pe": 15.28,
       "industry": "Oil & Gas",
       "quarters": [
         {
@@ -498,7 +498,7 @@
       "name": "Rio Tinto Group",
       "wave": "energy",
       "price": 99.96,
-      "ttm_pe": 13.45,
+      "ttm_pe": 13.54,
       "industry": "Mining",
       "quarters": [],
       "spark": []
@@ -549,7 +549,7 @@
       "name": "Novo Nordisk A/S",
       "wave": "bio",
       "price": 43.07,
-      "ttm_pe": 10.77,
+      "ttm_pe": 10.56,
       "industry": "Pharmaceuticals",
       "quarters": [
         {
@@ -590,7 +590,7 @@
       "name": "Eli Lilly",
       "wave": "bio",
       "price": 1115.7,
-      "ttm_pe": 37.73,
+      "ttm_pe": 37.45,
       "industry": "Pharmaceuticals",
       "quarters": [
         {
@@ -672,7 +672,7 @@
       "name": "Visa Inc.",
       "wave": "markets",
       "price": 370.45,
-      "ttm_pe": 31.26,
+      "ttm_pe": 31.55,
       "industry": "Payments",
       "quarters": [
         {
@@ -713,7 +713,7 @@
       "name": "BlackRock Inc.",
       "wave": "markets",
       "price": 1079.65,
-      "ttm_pe": 25.45,
+      "ttm_pe": 25.84,
       "industry": "Asset Management",
       "quarters": [
         {
@@ -754,7 +754,7 @@
       "name": "JPMorgan Chase",
       "wave": "markets",
       "price": 356.23,
-      "ttm_pe": 15.15,
+      "ttm_pe": 15.27,
       "industry": "Banking",
       "quarters": [
         {
@@ -795,7 +795,7 @@
       "name": "MercadoLibre Inc.",
       "wave": "markets",
       "price": 1897.37,
-      "ttm_pe": 51.81,
+      "ttm_pe": 51.54,
       "industry": "E-commerce/Fintech",
       "quarters": [
         {
@@ -877,7 +877,7 @@
       "name": "Lockheed Martin",
       "wave": "defense",
       "price": 524.19,
-      "ttm_pe": 19.53,
+      "ttm_pe": 19.34,
       "industry": "Defense",
       "quarters": [
         {
@@ -918,7 +918,7 @@
       "name": "Rheinmetall AG",
       "wave": "defense",
       "price": 990.6,
-      "ttm_pe": 38.07,
+      "ttm_pe": 38.03,
       "industry": "Defense",
       "quarters": [
         {
@@ -1041,13 +1041,13 @@
       "name": "BYD Company",
       "wave": "defense",
       "price": 10.13,
-      "ttm_pe": 20.67,
+      "ttm_pe": 21.1,
       "industry": "EV/Battery",
       "quarters": [
         {
           "label": "Q2 2026",
           "revenue": 194.59,
-          "eps": 0.49,
+          "eps": 0.48,
           "yoy": -3
         },
         {
@@ -1088,7 +1088,7 @@
         {
           "label": "Q2 2026",
           "revenue": 20.54,
-          "eps": 7.77,
+          "eps": 23.25,
           "yoy": 24
         },
         {
