@@ -1,0 +1,2 @@
+# Continuity
+Before edits, read `_support/STATUS.md` and inspect git status. Preserve existing user changes. Use RUN.bat as the single primary launcher. Update `_support/STATUS.md` after each completed change and before ending a turn with the exact files changed, test results, unfinished work, and next action. Keep credentials and private databases out of commits. Do not move input/runtime paths without checking their consumers.

@@ -1,0 +1,19 @@
+{
+  "project": "strategic-intel",
+  "mode": "server",
+  "args": [
+    "-m",
+    "http.server",
+    "8891",
+    "--bind",
+    "127.0.0.1"
+  ],
+  "output": "dashboard_final (2).html",
+  "code": [
+    "dashboard_final (2).html",
+    "fetch_data.py"
+  ],
+  "imports": [],
+  "port": 8891,
+  "url_path": "dashboard_final%20%282%29.html"
+}
