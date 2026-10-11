@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10 11:50 UTC",
+  "generated": "2026-10-11 12:02 UTC",
   "companies": [
     {
       "sym": "NVDA",
@@ -88,7 +88,7 @@
       "name": "ASML Holding NV",
       "wave": "ai",
       "price": 1780.34,
-      "ttm_pe": 57.45,
+      "ttm_pe": 57.78,
       "industry": "Semiconductor Equip.",
       "quarters": [
         {
@@ -293,13 +293,13 @@
       "name": "Amazon.com Inc.",
       "wave": "ai",
       "price": 262.43,
-      "ttm_pe": 20.44,
+      "ttm_pe": 21.11,
       "industry": "Cloud/E-commerce",
       "quarters": [
         {
           "label": "Q2 2026",
           "revenue": null,
-          "eps": 12.84,
+          "eps": 12.43,
           "yoy": null
         },
         {
@@ -415,8 +415,8 @@
       "sym": "2222.SR",
       "name": "Saudi Aramco",
       "wave": "energy",
-      "price": 25.74,
-      "ttm_pe": 15.23,
+      "price": 25.7,
+      "ttm_pe": 15.21,
       "industry": "Oil & Gas",
       "quarters": [
         {
@@ -508,7 +508,7 @@
       "name": "Deere & Company",
       "wave": "energy",
       "price": 620.93,
-      "ttm_pe": 36.27,
+      "ttm_pe": 34.52,
       "industry": "Machinery",
       "quarters": [
         {
@@ -836,7 +836,7 @@
       "name": "Reliance Industries",
       "wave": "markets",
       "price": 1170.3,
-      "ttm_pe": 21.33,
+      "ttm_pe": 21.19,
       "industry": "Conglomerate",
       "quarters": [
         {
