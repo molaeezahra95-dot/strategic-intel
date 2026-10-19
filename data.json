@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-18 10:19 UTC",
+  "generated": "2026-10-19 12:00 UTC",
   "companies": [
     {
       "sym": "NVDA",
@@ -334,7 +334,7 @@
       "name": "Broadcom Inc.",
       "wave": "ai",
       "price": 328.75,
-      "ttm_pe": 43.31,
+      "ttm_pe": 41.99,
       "industry": "Semiconductors",
       "quarters": [
         {
@@ -415,8 +415,8 @@
       "sym": "2222.SR",
       "name": "Saudi Aramco",
       "wave": "energy",
-      "price": 25.76,
-      "ttm_pe": 15.24,
+      "price": 25.78,
+      "ttm_pe": 15.25,
       "industry": "Oil & Gas",
       "quarters": [
         {
@@ -835,8 +835,8 @@
       "sym": "RELIANCE.NS",
       "name": "Reliance Industries",
       "wave": "markets",
-      "price": 1211.2,
-      "ttm_pe": 21.93,
+      "price": 1202.0,
+      "ttm_pe": 21.77,
       "industry": "Conglomerate",
       "quarters": [
         {
@@ -917,8 +917,8 @@
       "sym": "RHM.DE",
       "name": "Rheinmetall AG",
       "wave": "defense",
-      "price": 1090.2,
-      "ttm_pe": 42.34,
+      "price": 1055.0,
+      "ttm_pe": 40.97,
       "industry": "Defense",
       "quarters": [
         {
