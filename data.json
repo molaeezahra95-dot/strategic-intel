@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-24 10:13 UTC",
+  "generated": "2026-10-25 10:38 UTC",
   "companies": [
     {
       "sym": "NVDA",
@@ -92,10 +92,16 @@
       "industry": "Semiconductor Equip.",
       "quarters": [
         {
+          "label": "Q3 2026",
+          "revenue": 11.66,
+          "eps": 12.93,
+          "yoy": 55
+        },
+        {
           "label": "Q2 2026",
           "revenue": 9.33,
           "eps": 7.58,
-          "yoy": 21
+          "yoy": null
         },
         {
           "label": "Q1 2026",
@@ -108,20 +114,14 @@
           "revenue": 9.72,
           "eps": 7.34,
           "yoy": 16
-        },
-        {
-          "label": "Q3 2025",
-          "revenue": 7.52,
-          "eps": 5.48,
-          "yoy": 16
         }
       ],
       "spark": [
-        7.7,
         7.5,
         9.7,
         8.8,
-        9.3
+        9.3,
+        11.7
       ]
     },
     {
@@ -415,8 +415,8 @@
       "sym": "2222.SR",
       "name": "Saudi Aramco",
       "wave": "energy",
-      "price": 25.4,
-      "ttm_pe": 15.03,
+      "price": 25.0,
+      "ttm_pe": 14.79,
       "industry": "Oil & Gas",
       "quarters": [
         {
@@ -717,6 +717,12 @@
       "industry": "Asset Management",
       "quarters": [
         {
+          "label": "Q3 2026",
+          "revenue": null,
+          "eps": 43.92,
+          "yoy": null
+        },
+        {
           "label": "Q2 2026",
           "revenue": 7.08,
           "eps": 11.63,
@@ -732,12 +738,6 @@
           "label": "Q4 2025",
           "revenue": 7.01,
           "eps": 6.81,
-          "yoy": 19
-        },
-        {
-          "label": "Q3 2025",
-          "revenue": 6.51,
-          "eps": 8.43,
           "yoy": 19
         }
       ],
@@ -758,6 +758,12 @@
       "industry": "Banking",
       "quarters": [
         {
+          "label": "Q3 2026",
+          "revenue": null,
+          "eps": 23.84,
+          "yoy": null
+        },
+        {
           "label": "Q2 2026",
           "revenue": 52.85,
           "eps": 7.85,
@@ -773,12 +779,6 @@
           "label": "Q4 2025",
           "revenue": 45.8,
           "eps": 4.75,
-          "yoy": 7
-        },
-        {
-          "label": "Q3 2025",
-          "revenue": 46.43,
-          "eps": 5.2,
           "yoy": 7
         }
       ],
@@ -1041,13 +1041,13 @@
       "name": "BYD Company",
       "wave": "defense",
       "price": 9.09,
-      "ttm_pe": 18.94,
+      "ttm_pe": 19.76,
       "industry": "EV/Battery",
       "quarters": [
         {
           "label": "Q2 2026",
           "revenue": 194.59,
-          "eps": 0.48,
+          "eps": 0.46,
           "yoy": -3
         },
         {
