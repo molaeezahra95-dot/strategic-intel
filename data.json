@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-25 10:38 UTC",
+  "generated": "2026-10-26 12:11 UTC",
   "companies": [
     {
       "sym": "NVDA",
@@ -51,10 +51,16 @@
       "industry": "Foundry",
       "quarters": [
         {
+          "label": "Q3 2026",
+          "revenue": 1494.24,
+          "eps": 147.13,
+          "yoy": 51
+        },
+        {
           "label": "Q2 2026",
           "revenue": 1270.38,
           "eps": 136.23,
-          "yoy": 36
+          "yoy": null
         },
         {
           "label": "Q1 2026",
@@ -67,20 +73,14 @@
           "revenue": 1046.09,
           "eps": 93.61,
           "yoy": 32
-        },
-        {
-          "label": "Q3 2025",
-          "revenue": 989.92,
-          "eps": 87.22,
-          "yoy": 32
         }
       ],
       "spark": [
-        933.8,
         989.9,
         1046.1,
         1134.1,
-        1270.4
+        1270.4,
+        1494.2
       ]
     },
     {
@@ -256,10 +256,16 @@
       "industry": "Social Media",
       "quarters": [
         {
+          "label": "Q3 2026",
+          "revenue": 64.6,
+          "eps": 3.83,
+          "yoy": 26
+        },
+        {
           "label": "Q2 2026",
           "revenue": 60.8,
           "eps": 6.18,
-          "yoy": 28
+          "yoy": null
         },
         {
           "label": "Q1 2026",
@@ -272,20 +278,14 @@
           "revenue": 59.89,
           "eps": 8.88,
           "yoy": 22
-        },
-        {
-          "label": "Q3 2025",
-          "revenue": 51.24,
-          "eps": 1.05,
-          "yoy": 22
         }
       ],
       "spark": [
-        47.5,
         51.2,
         59.9,
         56.3,
-        60.8
+        60.8,
+        64.6
       ]
     },
     {
@@ -334,7 +334,7 @@
       "name": "Broadcom Inc.",
       "wave": "ai",
       "price": 321.68,
-      "ttm_pe": 42.95,
+      "ttm_pe": 41.08,
       "industry": "Semiconductors",
       "quarters": [
         {
@@ -375,7 +375,7 @@
       "name": "Palantir Technologies",
       "wave": "ai",
       "price": 196.75,
-      "ttm_pe": 174.12,
+      "ttm_pe": 169.61,
       "industry": "Data Analytics",
       "quarters": [
         {
@@ -415,8 +415,8 @@
       "sym": "2222.SR",
       "name": "Saudi Aramco",
       "wave": "energy",
-      "price": 25.0,
-      "ttm_pe": 14.79,
+      "price": 25.6,
+      "ttm_pe": 15.15,
       "industry": "Oil & Gas",
       "quarters": [
         {
@@ -549,7 +549,7 @@
       "name": "Novo Nordisk A/S",
       "wave": "bio",
       "price": 39.05,
-      "ttm_pe": 9.46,
+      "ttm_pe": 9.55,
       "industry": "Pharmaceuticals",
       "quarters": [
         {
@@ -795,7 +795,7 @@
       "name": "MercadoLibre Inc.",
       "wave": "markets",
       "price": 1810.15,
-      "ttm_pe": 50.03,
+      "ttm_pe": 49.23,
       "industry": "E-commerce/Fintech",
       "quarters": [
         {
@@ -835,8 +835,8 @@
       "sym": "RELIANCE.NS",
       "name": "Reliance Industries",
       "wave": "markets",
-      "price": 1190.0,
-      "ttm_pe": 21.55,
+      "price": 1201.8,
+      "ttm_pe": 21.76,
       "industry": "Conglomerate",
       "quarters": [
         {
@@ -881,10 +881,16 @@
       "industry": "Defense",
       "quarters": [
         {
+          "label": "Q3 2026",
+          "revenue": 20.71,
+          "eps": 7.97,
+          "yoy": 11
+        },
+        {
           "label": "Q2 2026",
           "revenue": 20.06,
           "eps": 7.94,
-          "yoy": 11
+          "yoy": null
         },
         {
           "label": "Q1 2026",
@@ -897,28 +903,22 @@
           "revenue": 20.32,
           "eps": 5.8,
           "yoy": 6
-        },
-        {
-          "label": "Q3 2025",
-          "revenue": 18.61,
-          "eps": 6.95,
-          "yoy": 6
         }
       ],
       "spark": [
-        18.2,
         18.6,
         20.3,
         18.0,
-        20.1
+        20.1,
+        20.7
       ]
     },
     {
       "sym": "RHM.DE",
       "name": "Rheinmetall AG",
       "wave": "defense",
-      "price": 1019.0,
-      "ttm_pe": 39.57,
+      "price": 1033.2,
+      "ttm_pe": 40.12,
       "industry": "Defense",
       "quarters": [
         {
@@ -1004,10 +1004,16 @@
       "industry": "EV/Energy",
       "quarters": [
         {
+          "label": "Q3 2026",
+          "revenue": 28.05,
+          "eps": 0.22,
+          "yoy": 0
+        },
+        {
           "label": "Q2 2026",
           "revenue": 28.24,
           "eps": 0.31,
-          "yoy": 26
+          "yoy": null
         },
         {
           "label": "Q1 2026",
@@ -1020,20 +1026,14 @@
           "revenue": 24.9,
           "eps": 0.24,
           "yoy": -3
-        },
-        {
-          "label": "Q3 2025",
-          "revenue": 28.09,
-          "eps": 0.39,
-          "yoy": -3
         }
       ],
       "spark": [
-        22.5,
         28.1,
         24.9,
         22.4,
-        28.2
+        28.2,
+        28.0
       ]
     },
     {
@@ -1088,7 +1088,7 @@
         {
           "label": "Q2 2026",
           "revenue": 20.54,
-          "eps": 7.77,
+          "eps": 23.23,
           "yoy": 24
         },
         {
