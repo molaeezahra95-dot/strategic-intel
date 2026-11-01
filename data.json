@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-31 11:38 UTC",
+  "generated": "2026-11-01 12:37 UTC",
   "companies": [
     {
       "sym": "NVDA",
@@ -1094,7 +1094,7 @@
         {
           "label": "Q2 2026",
           "revenue": 20.54,
-          "eps": null,
+          "eps": 7.77,
           "yoy": 24
         },
         {
