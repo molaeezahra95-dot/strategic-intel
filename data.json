@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-14 12:55 UTC",
+  "generated": "2026-11-15 13:23 UTC",
   "companies": [
     {
       "sym": "NVDA",
@@ -415,8 +415,8 @@
       "sym": "2222.SR",
       "name": "Saudi Aramco",
       "wave": "energy",
-      "price": 26.4,
-      "ttm_pe": 14.19,
+      "price": 26.68,
+      "ttm_pe": 14.34,
       "industry": "Oil & Gas",
       "quarters": [
         {
